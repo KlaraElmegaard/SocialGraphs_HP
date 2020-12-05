@@ -53,6 +53,8 @@ We create one subgraph consisting only of characters from the four houses and on
 | gryffindor: |	155 | | muggle-born: | 23 |
 
 
+
+
 ## Comparing language in books, movies and on characters pages 
 
 
