@@ -64,10 +64,7 @@ Communities are smaller locally dense connected subgraph in a network, where the
 
 Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/latest/api.html), has seperated the graph into networks.
 
-
-
-
-
+{% include file.html %}
 
 
 
