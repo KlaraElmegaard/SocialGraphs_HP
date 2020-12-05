@@ -66,7 +66,9 @@ Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/
 
 {% include Communities-in-Harry-Potter-fandom-universe.html%}
 
-Many nodes, many edges, but funny to surf around! Let's dig a bit deeper into these communities, and the distributions of characters in each community.
+Many nodes, many edges, but funny to surf around! Can you find Harry Potter now? That is harder!
+
+Let's dig a bit deeper into these communities, and the distributions of characters in each community.
 
 <img src="images/com_dist.png" alt="hi" class="inline"/>
 
