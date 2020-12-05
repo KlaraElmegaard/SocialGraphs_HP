@@ -35,9 +35,8 @@ If you again look at the above plot, a lot of the nodes are dark blue meaning th
 
 We see that the character most other characters link to is Harry Potter (surprise). Number two to five is also big characters in the Harry Potter Universe. One notices that the number of other characters linking to Harry Potter is more than twice as big as for Hermione Granger (number two). It makes sense that most characters from the Harry Potter Books link to Harry Potter. We see that ALbus Dumbledore is the character that links to most other characters closely followed by Harry Potter. Next we see Ronald weasley and Tom Riddle who with did not see in top five for the in-degree distribution. To get a better overview, we plot the degree distribution. In the below plot... XXX
 
-
-<img src="images/indegree.png" alt="hi" class="inline"/>
-
+<img src="images/histindegree.png" alt="hi" class="inline"/>
+<img src="images/llindegree.png" alt="hi" class="inline"/>
 
 ## Is their a seperation of the houses or maybe the blood-types in out network?
 So now that we have a better understandig of out netowrk, we will begin to dig deeper in the network. 
