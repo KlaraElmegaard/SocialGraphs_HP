@@ -39,6 +39,8 @@ We see that the character most other characters link to is Harry Potter (surpris
 <img src="images/llindegree.png" alt="hi" class="inline"/>
 
 ## Is their a seperation of the houses or maybe the blood-types in out network?
+*“Not Slytherin, eh?” said the small voice. “Are you sure? You could be great, you know, it’s all here in your head, and Slytherin will help you on the way to greatness, no doubt about that — no? Well, if you’re sure — better be GRYFFINDOR!” - Harry Potter and the sorting hat*
+
 So now that we have a better understandig of out netowrk, we will begin to dig deeper in the network. 
 
 On Higwards, the school is seperated into four houses: Griffendor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befrind and spend a lot of time with. The seperation between Griffendor and SLytherin and especially - Griffendor as the 'good' house and Slytherin as the 'evil' house. It is therefore interesten to see if this separation is transparent in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses. This meaning that characters wiki pages is more connected (link more) to characters from the same house than chracters from different houses. 
@@ -54,8 +56,14 @@ We create one subgraph consisting only of characters from the four houses and on
 | hufflepuff: | 97 | | pure-blood: | 363 |
 | gryffindor: |	155 | | muggle-born: | 23 |
 
+## Communities between the characters - are all characters connected as we believe?
+*"You're not going mad or anything. I can see them too." - Luna Lovegood*
+
+In a network, smaller communities can be formed as 
+
+
 
 
 ## Comparing language in books, movies and on characters pages 
-
+Alright we 
 
