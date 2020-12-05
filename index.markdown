@@ -59,7 +59,13 @@ We create one subgraph consisting only of characters from the four houses and on
 ## Communities between the characters - are all characters connected as we believe?
 *"You're not going mad or anything. I can see them too." - Luna Lovegood*
 
-In a network, smaller communities can be formed as 
+Communities are smaller locally dense connected subgraph in a network, where the nodes are more likely to connect to other nodes in the same community[1](http://networksciencebook.com/chapter/9#basics). Of course the network of all characters in the Harry Potter universe forms such communities! Some are obvious, but is there communites that we did not know about? Are some enimies more connected than friends, alliances or even family? Let's find out!
+
+Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/latest/api.html), has seperated the graph into networks.
+
+
+
+
 
 
 
