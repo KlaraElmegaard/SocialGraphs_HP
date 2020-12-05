@@ -10,9 +10,9 @@ th {
 ## Networks, data and... Harry Potter??
 
 Was you disappointed when you turned 11 and did not recieved a letter with an owl inviting you to start at Hogwarts, School of Witchcraft and Wizardry? If so, you are like us! 
-And if you, still want to go to Hogwarts and explore the big universe and meets characters, you have come right place! \n
-Using the Through network thoery, the known and unknown relationships between the fantastic and wonderful characters that appear in the universe, together with the connections between bloodtype (muggles, pure-blood e.g.) and the four houses of Hogwarts, will be analyzed. 
-With natural language processing the language of the character pages, the books and manuscripts of the movies will be analysed through sentiment analysis and wordclouds.
+And if you, still want to go to Hogwarts and explore the big universe and meets characters, you have come right place! 
+
+Using the Through network thoery, the known and unknown relationships between the fantastic and wonderful characters that appear in the universe, together with the connections between bloodtype (muggles, pure-blood e.g.) and the four houses of Hogwarts, will be analyzed. With natural language processing the language of the character pages, the books and manuscripts of the movies will be analysed through sentiment analysis and wordclouds.
 
 ## Data
 Where do one get a lot if information? Lucky for us a huge Fandom Wiki exists for the Harry Potter Universe. We used this to download the wikipedia pages for all the characters LINK. From each wiki-page we used regular expression to get all the links but also to gather informations such af house, blood and gender. Since the language on wiki-pages are fairly neutral, we also usd text analysis to analyse the books LINK and the movie scripts LINK. Regarding the movie scrips, the sentiment of some of the main characters will be considered over time. LINK TO DATA
@@ -37,11 +37,20 @@ We see that the character most other characters link to is Harry Potter (surpris
 
 
 ## Is their a seperation of the houses or maybe the blood-types in out network?
-So now that we have a better understandig of out netowrk, we will begin to dig deeper in the network. \n
+So now that we have a better understandig of out netowrk, we will begin to dig deeper in the network. 
 
-On Higwards, the school is seperated into four houses: Griffendor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befrind and spend a lot of time with. The seperation between Griffendor and SLytherin and especially - Griffendor as the 'good' house and Slytherin as the 'evil' house. It is therefore interesten to see if this separation is transparent in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses. This meaning that characters wiki pages is more connected (link more) to characters from the same house than chracters from different houses. \n
+On Higwards, the school is seperated into four houses: Griffendor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befrind and spend a lot of time with. The seperation between Griffendor and SLytherin and especially - Griffendor as the 'good' house and Slytherin as the 'evil' house. It is therefore interesten to see if this separation is transparent in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses. This meaning that characters wiki pages is more connected (link more) to characters from the same house than chracters from different houses. 
 
-In the Harry Potter books/movies, Voldemort (the evil guy) is out to kill all muggle-borns (wizards with non-magic parrent) - also known as mudbloods! Thus the books exploit the seperation of pure-blood, half-bood, muggle-born and of cause non-magic people. It is therefore interesting to see if we see the same seperation in the network. First we create a subgraph consisting only of characters from the above four groups. \n
+In the Harry Potter books/movies, Voldemort (the evil guy) is out to kill all muggle-borns (wizards with non-magic parrent) - also known as mudbloods! Thus the books exploit the seperation of pure-blood, half-bood, muggle-born and of cause non-magic people. It is therefore interesting to see if we see the same seperation in the network. 
+
+We create one subgraph consisting only of characters from the four houses and one subgraph consisting only of characters from the above four blood-types. 
+
+| Number of characters in | | | Number of characters in | |
+| ----------------------- | ---- | | ----------------------- | ---- |
+| ravenclaw: | 95 | | half-blood: |	83 |
+| slytherin: | 163 | | non-magic people: | 185 |
+| hufflepuff: | 97 | | pure-blood: | 363 |
+| gryffindor: |	155 | | muggle-born: | 23 |
 
 
 ## Comparing language in books, movies and on characters pages 
