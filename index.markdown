@@ -7,7 +7,6 @@ And if you still want to go to Hogwarts and explore the big universe of magic an
 
 ## Interactions between characters
 
-
 {% include file.html %}
 
 ## Comparing language in books, movies and on characters pages 
