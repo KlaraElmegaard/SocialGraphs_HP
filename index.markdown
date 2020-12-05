@@ -54,7 +54,6 @@ We create one subgraph consisting only of characters from the four houses and on
 
 
 
-
 ## Comparing language in books, movies and on characters pages 
 
 
