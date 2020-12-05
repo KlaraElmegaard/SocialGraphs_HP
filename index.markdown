@@ -1,4 +1,4 @@
-## Analysing interactions in the universe of Harry Potter
+<h1> Analysing interactions in the universe of Harry Potter <h1>
 
 ## Networks, data and... Harry Potter??
 
