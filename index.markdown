@@ -66,7 +66,22 @@ Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/
 
 {% include Communities-in-Harry-Potter-fandom-universe.html%}
 
-Many nodes, many edges, but funny to surf around! Let's dig a bit deeper into these communities, 
+Many nodes, many edges, but funny to surf around! Let's dig a bit deeper into these communities, and the distributions of characters in each community.
+
+<img src="images/com_dist.png" alt="hi" class="inline"/>
+
+So the size of the communities variate a lot, but would it be meaningful to look at all of these. Let take a look at the first five characters of a small network and and large.
+
+| Community 0 | | Community 1 | 
+| ----------------------- | | ----------------------- |
+|Angus Buchanan| |Bartemius Crouch Junior|
+Flora Buchanan| |Alphard Black |
+Hamish Buchanan| |Iola Black|
+John| |Phineas Black|
+Luke| |Sirius Black|
+
+So just by looking at the first five characters a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only containing minor characters. Lets us therefore tak a look at the  6 most connected charaters in the largest communites! 
+
 
 
 ## Comparing language in books, movies and on characters pages 
