@@ -24,13 +24,16 @@ To be able to use a lot of cool netowrk analysis, we first need to be able to re
 
 ## Looking into some Basic Statistics
 The main statistics that we will look into here, if the degree distribution. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most commected characters both in regards to in- and out-degrees. 
-| | Character | Number of in-going links| 
-| ----- | ------------- | ------------- |
-|1:| Harry Potter | 787 |
-|2:| Hermione Granger| 330|
-|3:| Albus Dumbledore| 316|
-|4:| Sirius Black| 185|
-|5:| Severus Snape| 177|
+|Top in-going | Character | Number of in-going links| | Top out-going | Character | Number of in-going links|
+| ----- | ------------- | ------------- |-| ----- | ------------- | ------------- |
+|1:| Harry Potter | 787 ||1:| Albus Dumbledore | 183 |
+|2:| Hermione Granger| 330||2:| Harry Potter| 162|
+|3:| Albus Dumbledore| 316||3:| Ronald Weasley | 126|
+|4:| Sirius Black| 185||4:| Tom Riddle| 124|
+|5:| Severus Snape| 177||5:| Hermione Granger|115|
+
+
+
 
 
 ## Comparing language in books, movies and on characters pages 
