@@ -24,6 +24,7 @@ To be able to use a lot of cool netowrk analysis, we first need to be able to re
 
 ## Looking into some Basic Statistics
 The main statistics that we will look into here, if the degree distribution. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most commected characters both in regards to in- and out-degrees. 
+
 |Top in-going | Character | Number of in-going links| | Top out-going | Character | Number of out-going links|
 | ----- | ------------- | ------------- |-| ----- | ------------- | ------------- |
 |1:| Harry Potter | 787 ||1:| Albus Dumbledore | 183 |
