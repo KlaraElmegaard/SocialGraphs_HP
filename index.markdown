@@ -1,4 +1,11 @@
-<h1> Analysing interactions in the universe of Harry Potter <h1>
+<style>
+td {
+  font-size: 11px
+}
+th {
+  font-size: 13px
+}
+</style>
 
 ## Networks, data and... Harry Potter??
 
