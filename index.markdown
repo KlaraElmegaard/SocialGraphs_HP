@@ -23,7 +23,7 @@ To be able to use a lot of cool netowrk analysis, we first need to be able to re
 {% include file.html %}
 
 ## Looking into some Basic Statistics
-The main statistics that we will look into here, if the degree distribution. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most commected characters both in regards to in- and out-degrees. 
+If you again look at the above plot, a lot of the nodes are dark blue meaning that they have very few links/edges. Thus the main statistics that we will look into here, is the degree distribution. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most commected characters both in regards to in- and out-degrees. 
 
 | Top in-going | Character | Number of in-going links | | Top out-going | Character | Number of out-going links |
 | ----- | ------------- | ------------- | - | ----- | ------------- | ------------- |
@@ -33,21 +33,17 @@ The main statistics that we will look into here, if the degree distribution. We 
 | 4: | Sirius Black | 185 | | 4: | Tom Riddle| 124 |
 | 5: | Severus Snape | 177 | | 5: | Hermione Granger | 115 |
 
+We see that the character most other characters link to is Harry Potter (surprise). Number two to five is also big characters in the Harry Potter Universe. One notices that the number of other characters linking to Harry Potter is more than twice as big as for Hermione Granger (number two). It makes sense that most characters from the Harry Potter Books link to Harry Potter. We see that ALbus Dumbledore is the character that links to most other characters closely followed by Harry Potter. Next we see Ronald weasley and Tom Riddle who with did not see in top five for the in-degree distribution. To get a better overview, we plot the degree distribution. In the below plot... XXX
 
 
+## Is their a seperation of the houses or maybe the blood-types in out network?
+So now that we have a better understandig of out netowrk, we will begin to dig deeper in the network. \n
+
+On Higwards, the school is seperated into four houses: Griffendor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befrind and spend a lot of time with. The seperation between Griffendor and SLytherin and especially - Griffendor as the 'good' house and Slytherin as the 'evil' house. It is therefore interesten to see if this separation is transparent in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses. This meaning that characters wiki pages is more connected (link more) to characters from the same house than chracters from different houses. \n
+
+In the Harry Potter books/movies, Voldemort (the evil guy) is out to kill all muggle-borns (wizards with non-magic parrent) - also known as mudbloods! Thus the books exploit the seperation of pure-blood, half-bood, muggle-born and of cause non-magic people. It is therefore interesting to see if we see the same seperation in the network. First we create a subgraph consisting only of characters from the above four groups. \n
 
 
 ## Comparing language in books, movies and on characters pages 
 
-| Community 1  | Community 2 | Community 3 | Community 4 | Community 5 |
-| ------------- | ------------- | ------------- | ------------- | ------------- | 
-| Madonna (Dance Pop)  | Kendrick Lamar (West Coast) | Paris (West Coast) | Planet Asia (West Coast) | Snoop Dogg (West Coast) |
-| Britney Spears (Dance Pop)  | Chris Brown (Dance Pop) | Subnoize Souljaz (West Coast) | Dilated Peoples (West Coast) | Dr. Dre (West Coast) |
-| Rihanna (Dance Pop) | Wiz Khalifa (West Coast) | Kottonmouth Kings (West Coast) | Murs (West Coast) | Ice Cube (West Coast) |
-| Michael Jackson (Dance Pop) | Dom Kennedy (West Coast) | Havoc (West Coast) | Gorillaz (Dance Pop) | The Game (West Coast) |
-| Janet Jackson (Dance Pop) | Tyga (West Coast) | Young Murder Squad (West Coast) | Evidence (West Coast) | Tha Dogg Pound (West Coast) |
-| Lady Gaga (Dance Pop) | Problem (West Coast) | Kingspade (West Coast) | Del the Funky Homosapien (West Coast) | Kurupt (West Coast) |
-| Nicki Minaj (Dance Pop) | Alchemist (West Coast) | Potluck (West Coast) | People Under The Stairs (West Coast) | Eazy-E (West Coast) |
-| Mariah Carey (Dance Pop) | Ty Dolla $ign (West Coast) | Delinquent Habits (West Coast) | Pigeon John (West Coast) | N.W.A (West Coast) |
-| Katy Perry (Dance Pop) | YG (West Coast) | Hed PE (West Coast) |  Domino (West Coast) | DJ Quik (West Coast) |
-| Justin Timberlake (Dance Pop) | Schoolboy Q (West Coast) | Sen Dog (West Coast) | The Grouch (West Coast) | Kam (West Coast) |
+
