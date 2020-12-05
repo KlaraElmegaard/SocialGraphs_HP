@@ -7,7 +7,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #  name:
 
 # Build settings
-theme: jekyll-theme-tactile
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
