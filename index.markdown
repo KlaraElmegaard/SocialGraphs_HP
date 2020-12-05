@@ -74,18 +74,20 @@ Let's dig a bit deeper into these communities, and the distributions of characte
 
 So the size of the communities variate a lot, but would it be meaningful to look at all of these. Let take a look at the first five characters of a small network and and large.
 
-| Community 0 | | Community 1 | 
-| ----------------------- | | ----------------------- |
-|Angus Buchanan| |Bartemius Crouch Junior|
-Flora Buchanan| |Alphard Black |
-Hamish Buchanan| |Iola Black|
-John| |Phineas Black|
-Luke| |Sirius Black|
+| Community 0 | Community 1 | 
+| ----------------------- | ----------------------- |
+|Angus Buchanan| Bartemius Crouch Junior|
+Flora Buchanan| Alphard Black |
+Hamish Buchanan| Iola Black|
+John| Phineas Black|
+Luke| Sirius Black|
 
-So just by looking at the first five characters a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only containing minor characters. Lets us therefore tak a look at the  6 most connected charaters in the largest communites! 
+So just by looking at the first five characters a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only containing minor characters. Lets us therefore take a look at the 6 most connected charaters in all communities that have more than 100 characters.
+
+
 
 
 
 ## Comparing language in books, movies and on characters pages 
-Alright we 
+
 
