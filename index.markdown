@@ -2,8 +2,10 @@
 
 ## Networks, data and... Harry Potter??
 
-Was you also a disappointed when you turned 11 and did not recieved a letter with an owl inviting you start at Hogwarts? If so you are like us! 
-And if you still want to go to Hogwarts and explore the big universe of magic and meets vcharacters you 
+Was you disappointed when you turned 11 and did not recieved a letter with an owl inviting you start at Hogwarts? If so, you are like us! 
+And if you still want to go to Hogwarts and explore the big universe and meets characters, you have come right place!
+Through network thoery, the known and unknown relationships between the fantastic and wonderful characters that appears in the universe, together with the connections between bloodtype (muggles, pure-blood e.g.) and the fur houses of Hogwarts. 
+With natural language processing the language of the character pages, the books and manuscripts of the movies will be analysed through sentiment analysis and wordclouds.
 
 ## Interactions between characters
 
