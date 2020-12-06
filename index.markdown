@@ -116,10 +116,39 @@ We have now looked into the connections between our new friendships, when we in 
 
 ### Is the terminology of pages, book and movies compareable?
 
+
 The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds gives a quick overview of which words that apears at most in a given text. The wordclouds for the combined text of all character pages, books and movies are showed below respectively.
 
+<img src="images/wordcluds.png" alt="hi" class="inline"/>
 
-You have guessed it? Of course "harry" and "potter" are two of the most common. 
+You've? Of guessed it! Of course "harry" and "potter" are two of the most common. 
 
-Actually many of the words are meaningful in the different wordsclouds and it is almost clearly to see which wordcloud that reflects each of the sources (also withour thee titles). While the wordcloud for the character pages showing many words that are connected to magic, the characters and the universe overall, the two other wordclouds showing a lot of verbs, releted to what the characters/actors do. 
+Actually many of the words are meaningful in the different wordsclouds and it is almost clearly to see which wordcloud that reflects each of the sources (also withour thee titles). While the wordcloud for the character pages showing many words that are connected to magic, the characters and the universe overall, the two other wordclouds also showing a lot of verbs, related to what the characters/actors do. 
 
+
+### Sentiment of the characters - is the evil guys really the saddest?
+
+We all know that the different characters of the Harry Potter universe have a lot of different personalities, so let prepare ourself to meet them for the first time! Is dobby actual as happy as we believe or are other characters happier? We will now perform a sentiment analyze of all the characters of the Fandom Wiki, too see which are the happiest and saddest characters.
+
+A sentiment analyze is performed to happiness rank a text, due to the words that is used. The happpiness ranking of words are defined in the [LabMT](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752). The distribution of sentiment are plotted below. 
+
+<img src="images/HistPS.png" alt="hi" class="inline"/>
+
+Yes it is a bit disappointing, that the span between the happiest and saddest characters is so small. Is the Death Eaters actual not as bad as we assume? But nothing are as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the text on the Fandom Wiki is supposed to be written in a natural language. Even though it could be fun to see which characters we should meet with the happy face and which we should meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
+
+| Happiest characters| Saddest characters | 
+| ----------------------- | ----------------------- |
+|Constance Pickering's sister| Unidentified male Death Eater during the Battle of Hogwarts (IV)|
+|Constance Pickering's mother| Unidentified Hogsmeade Death Eater (II)|
+|Constance Pickering's brother (II)| Unidentified Death Eater knocked out by Alastor Moody|
+|Nozéa Lestrange| Unidentified male bald Death Eater|
+|Constance Pickering's brother (I)| Unidentified Death Eater killed by Kingsley Shacklebolt|
+|Constance Pickering's grandfather| Unidentified Death Eater in the Forbidden Forest|
+|Constance Pickering's grandmother| Unidentified Black Death Eater at the Battle of Hogwarts|
+|Ravenclaw Wizard's Chess champion| Unidentified Light Male Death Eater (I)|
+|Unidentified 2000s Hogwarts student's parents| Unidentified wizard killed at the Quad battlements|
+|Falco Tremblay|Poppy Pomfrey's Death Eater Opponent|
+ 
+Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This sites is not very short, making the good words count a lot. 
+ 
+and found out where our favourite series has happiest and saddest! 
