@@ -73,7 +73,7 @@ On the right, we see that pure-bloods, half-bloods and muggle-borns all link mos
 
 Since we mostly saw a seperation between the houses, we illustrate this graph where the nodes are colored per house.
 
-{% include G_houses.html %}
+{% include Houses-in-Harry-Potter-fandom-universe.html %}
 
 All in all we saw a seperation between especially the Griffendor house and the Slytherin house, where each house linked more to its own house than to the other three houses respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuf house, they linked mostly to the Griffendor house and second most to them selves. It is interesting that they link second must to them selfs and not second most to Slytherin. This shows that Griffendor is a bigger or more importens house than Slytherin. It is also noted that the distance in how much Griffendor links to Slytherin compared to Ravenclaw and Hufflepuf is not at big as the distance in how much Slytherin links to Griffendor compared to Ravenclaw and Hufflepuf. Meaning that Slytherin do not link very much to Ravenclaw and Hufflepuf compared to Griffendor. This again underlines that Griffendor is the house everything centers about with Slytheren being the second biggest. 
 
