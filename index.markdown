@@ -98,7 +98,7 @@ We have now looked into the connections between our new friendships, when we in 
 The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds gives a quick overview of which words that apears at most in a given text. The wordclouds for the combined text of all character pages, books and movies are showed below respectively.
 
 
+You have guessed it? Of course "harry" and "potter" are two of the most common. 
 
-
-
+Actually many of the words are meaningful in the different wordsclouds and it is almost clearly to see which wordcloud that reflects each of the sources (also withour thee titles). While the wordcloud for the character pages showing many words that are connected to magic, the characters and the universe overall, the two other wordclouds showing a lot of verbs, releted to what the characters/actors do. 
 
