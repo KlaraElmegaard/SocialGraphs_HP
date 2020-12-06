@@ -33,11 +33,12 @@ If you again look at the above plot, a lot of the nodes are dark blue meaning th
 | 4: | Sirius Black | 185 | | 4: | Tom Riddle| 124 |
 | 5: | Severus Snape | 177 | | 5: | Hermione Granger | 115 |
 
-We see that the character most other characters link to is Harry Potter (surprise). Number two to five is also big characters in the Harry Potter Universe. One notices that the number of other characters linking to Harry Potter is more than twice as big as for Hermione Granger (number two). It makes sense that most characters from the Harry Potter Books link to Harry Potter. We see that ALbus Dumbledore is the character that links to most other characters closely followed by Harry Potter. Next we see Ronald weasley and Tom Riddle who with did not see in top five for the in-degree distribution. To get a better overview, we plot the degree distribution. In the below plot... XXX
+We see that the character most other characters link to is Harry Potter (surprise). Number two to five is also big characters in the Harry Potter Universe. One notices that the number of other characters linking to Harry Potter is more than twice as big as for Hermione Granger (number two). It makes sense that most characters from the Harry Potter Books link to Harry Potter. We see that ALbus Dumbledore is the character that links to most other characters closely followed by Harry Potter. Next we see Ronald weasley and Tom Riddle who with did not see in top five for the in-degree distribution. To get a better overview, we plot the degree distribution. First in two histograms below. Here we see that most has an indegree of 0, meaning that no characters link to their page. This makes sense as we have included a lot of very small character that was unknown to us. We also see that very few characters has a high number of ingoing links. If we consider the out-degree distribution, we again have that most characters have a small number of outgoing links and few characters with a high number of outgoing links. Here we again look at the less importent characters
 
 <img src="images/histindegree.png" alt="hi" class="inline"/>
 <img src="images/histoutdegree.png" alt="hi" class="inline"/>
 <img src="images/llindegree.png" alt="hi" class="inline"/>
+<img src="images/lloutdegree.png" alt="hi" class="inline"/>
 
 ## Is their a seperation of the houses or maybe the blood-types in out network?
 *“Not Slytherin, eh?” said the small voice. “Are you sure? You could be great, you know, it’s all here in your head, and Slytherin will help you on the way to greatness, no doubt about that — no? Well, if you’re sure — better be GRYFFINDOR!” - Harry Potter and the sorting hat*
