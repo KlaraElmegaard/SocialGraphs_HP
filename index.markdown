@@ -89,5 +89,12 @@ So just by looking at the first five characters a pattern is shown: The large co
 
 
 ## Comparing language in books, movies and on characters pages 
+*"Because that's what Hermione does,' said Ron, shrugging. 'When in doubt, go to the library."*
+
+We have now looked into the connections between our new friendships, when we in the hopefully soon get our letter from Hogwats (in an age of way to much) and we are ready to meet them all, good as bad, Bellatrix Lestrange as Neville Longbottom! So now we go to the "library" with Hermione Granger herself and look all thw written material we can find - we are ready for the natural language processing! For this part the character pages of the Fandom wiki, the books and the manusscripts for the movies (besides movie 5) will be analyzed.
+
+### Is the terminology of pages, book and movies compareable?
+
+
 
 
