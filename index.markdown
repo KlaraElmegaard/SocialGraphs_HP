@@ -59,7 +59,19 @@ We create one subgraph consisting only of characters from the four houses and on
 | hufflepuff: | 97 | | pure-blood: | 363 |
 | gryffindor: |	155 | | muggle-born: | 23 |
 
-SInce we have $4^4=16$ different posibilities, we consider the links in a heatmap
+Since we have $4^4=16$ different posibilities, we consider the links in a heatmap
+
+<img src="images/heat_houses_blood.png" alt="hi" class="inline"/>
+
+On the left, we see that Griffendor characters link most to characters from their own house. The same is the case for the Slytherin house. But characters from both Rawenclaw and Hufflepuff links mostly to characters in Gryffendor. An axplanation could be that Gryffendor and SLytherun is both big/importent houses with importing characters whereas Ravenclaw and Hufflepuff mostly consists of smaller/less importent characters - thus not characters that are linked to.
+
+On the right, we see that pure-bloods, half-bloods and muggle-borns all link most to pure-blood where non-magic people link mostly to other non-magic people. All four group links the second most til half-bloods. In generel not many characters link to non-magic people and muggle-born.
+
+Since we mostly saw a seperation between the houses, we illustrate this graph where the nodes are colored per house.
+
+All in all we saw a seperation between especially the Griffendor house and the Slytherin house, where each house linked more to its own house than to the other three houses respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuf house, they linked mostly to the Griffendor house and second most to them selves. It is interesting that they link second must to them selfs and not second most to Slytherin. This shows that Griffendor is a bigger or more importens house than Slytherin. It is also noted that the distance in how much Griffendor links to Slytherin compared to Ravenclaw and Hufflepuf is not at big as the distance in how much Slytherin links to Griffendor compared to Ravenclaw and Hufflepuf. Meaning that Slytherin do not link very much to Ravenclaw and Hufflepuf compared to Griffendor. This again underlines that Griffendor is the house everything centers about with Slytheren being the second biggest.
+
+All in all we do not see as pronounced differences as for the houses in the previous section. We see that half-bloods, muggle-borns and pure-bloods link mostly to pure-bloods. All three also links the second most to half-bloods. On the other hans non-magic people links mostly to non-magic people ad second most to half-bloods. Thus we might see a seperation between non-magic people and magic people in general. This makes sense, since we also in the book see a clear seperation of the non-magic people and the magic people. Thus even though the generel purpose for the evil guy (Voldemort) is to seperate pure-bloods and muggle-born (partly also half-bloods), we do not see this deference in the wikipages of the characters.
 
 
 ## Communities between the characters - are all characters connected as we believe?
