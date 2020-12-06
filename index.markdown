@@ -33,19 +33,20 @@ If you again look at the above plot, a lot of the nodes are dark blue meaning th
 | 4: | Sirius Black | 185 | | 4: | Tom Riddle| 124 |
 | 5: | Severus Snape | 177 | | 5: | Hermione Granger | 115 |
 
-We see that the character most other characters link to is Harry Potter (surprise). Number two to five is also big characters in the Harry Potter Universe. One notices that the number of other characters linking to Harry Potter is more than twice as big as for Hermione Granger (number two). It makes sense that most characters from the Harry Potter Books link to Harry Potter. We see that ALbus Dumbledore is the character that links to most other characters closely followed by Harry Potter. Next we see Ronald weasley and Tom Riddle who with did not see in top five for the in-degree distribution. To get a better overview, we plot the degree distribution. First in two histograms below. Here we see that most has an indegree of 0, meaning that no characters link to their page. This makes sense as we have included a lot of very small character that was unknown to us. We also see that very few characters has a high number of ingoing links. If we consider the out-degree distribution, we again have that most characters have a small number of outgoing links and few characters with a high number of outgoing links. Here we again look at the less importent characters
+We see that the character most other characters link to is Harry Potter (surprise). Number two to five is also big characters in the Harry Potter Universe. One notices that the number of other characters linking to Harry Potter is more than twice as big as for Hermione Granger (number two). It makes sense that most characters from the Harry Potter Books link to Harry Potter. We see that ALbus Dumbledore is the character that links to most other characters closely followed by Harry Potter. Next we see Ronald weasley and Tom Riddle who with did not see in top five for the in-degree distribution. To get a better overview, we plot the degree distribution. First in two histograms below. Here we see that most has an indegree of 0, meaning that no characters link to their page. This makes sense as we have included a lot of very small character that was unknown to us. We also see that very few characters has a high number of ingoing links. If we consider the out-degree distribution, we again have that most characters have a small number of outgoing links and few characters with a high number of outgoing links. Here we again look at the less importent characters not have very many outgoing links - probabaly due to their wiki-page being very short and them not having very much interaction with other characters. 
 
 <img src="images/histindegree.png" alt="hi" class="inline"/>
 <img src="images/histoutdegree.png" alt="hi" class="inline"/>
-<img src="images/llindegree.png" alt="hi" class="inline"/>
-<img src="images/lloutdegree.png" alt="hi" class="inline"/>
+
+If we next consider the above histograms on a log-log scale, we a able to identify that both the in- and the out degree distribution resembles that of a scale free network more than that of a random network. To get a more thorough and technical explanation of this, please visit the explainer notebook. 
+<img src="images/llinoutdegree.png" alt="hi" class="inline"/>
 
 ## Is their a seperation of the houses or maybe the blood-types in out network?
 *“Not Slytherin, eh?” said the small voice. “Are you sure? You could be great, you know, it’s all here in your head, and Slytherin will help you on the way to greatness, no doubt about that — no? Well, if you’re sure — better be GRYFFINDOR!” - Harry Potter and the sorting hat*
 
 So now that we have a better understandig of out netowrk, we will begin to dig deeper in the network. 
 
-On Higwards, the school is seperated into four houses: Griffendor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befrind and spend a lot of time with. The seperation between Griffendor and SLytherin and especially - Griffendor as the 'good' house and Slytherin as the 'evil' house. It is therefore interesten to see if this separation is transparent in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses. This meaning that characters wiki pages is more connected (link more) to characters from the same house than chracters from different houses. 
+On Hogwards, the school is seperated into four houses: Griffendor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befrind and spend a lot of time with. The seperation between Griffendor and SLytherin and especially - Griffendor as the 'good' house and Slytherin as the 'evil' house. It is therefore interesten to see if this separation is transparent in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses. This meaning that characters wiki pages is more connected (link more) to characters from the same house than chracters from different houses. 
 
 In the Harry Potter books/movies, Voldemort (the evil guy) is out to kill all muggle-borns (wizards with non-magic parrent) - also known as mudbloods! Thus the books exploit the seperation of pure-blood, half-bood, muggle-born and of cause non-magic people. It is therefore interesting to see if we see the same seperation in the network. 
 
@@ -57,6 +58,9 @@ We create one subgraph consisting only of characters from the four houses and on
 | slytherin: | 163 | | non-magic people: | 185 |
 | hufflepuff: | 97 | | pure-blood: | 363 |
 | gryffindor: |	155 | | muggle-born: | 23 |
+
+SInce we have $4^4=16$ different posibilities, we consider the links in a heatmap
+
 
 ## Communities between the characters - are all characters connected as we believe?
 *"You're not going mad or anything. I can see them too." - Luna Lovegood*
