@@ -114,10 +114,9 @@ So just by looking at the first five characters a pattern is shown: The large co
 |Lucius Malfoy|Remus Lupin|Aberforth Dumbledore|Daniel Page|Walden Macnair|Porpentina Goldstein|Neville Longbottom|Barnaby Lee|Xenophilius Lovegood|Hedwig|Marcus Belby|
 |Phineas Nigellus Black|Ginevra Weasley|Beedle the Bard|Fay Dunbar|Amelia Bones|Jacob Kowalski|Cedric Diggory|Rowan Khanna|Travers|Arabella Figg|Walter Parkin|
 
-You donøt have to be an Harry Potter expert to see that many of these communities are well-defined. Just look at community 2. This is the big "Weasley community" containing, at least all the most prominent characters of the Weasley familiy. This surname or familiy pattern are actually a pattern presented in many of these community. Another element that connects the community is places or occupation. Community 8 is clearly a "Hogwarts" network, containing many of the important characters attending or working on Hogwarts. A last pattern, among many others that can be explored in the graph, we want to point out is that the universe part series also have takes a part in the community seperation. Look at community 7, mostly containing characters from the "Fantastic beasts and where to find them@ movies series.
+You donøt have to be an Harry Potter expert to see that many of these communities are well-defined. Just look at community 2. This is the big "Weasley community" containing, at least all the most prominent characters of the Weasley familiy. This surname or familiy pattern are actually a pattern presented in many of these community. Another element that connects the community is places or occupation. Community 8 is clearly a "Hogwarts" network, containing many of the important characters attending or working on Hogwarts. A last pattern, among many others that can be explored in the graph, we want to point out is that the universe part series also have takes a part in the community seperation. Look at community 7, mostly containing characters from the "Fantastic beasts and where to find them" movies series. The "house" and "blood-type" patterns, are not directly showed in these large communities, which indicates that e.g. the factors described in this sections, have a stronger impact on the relationships between the characters.
 
 Feel free to further explore the communities in the graph!
-
 
 ## Comparing language in books, movies and on characters pages 
 *"Because that's what Hermione does,' said Ron, shrugging. 'When in doubt, go to the library."*
@@ -125,7 +124,6 @@ Feel free to further explore the communities in the graph!
 We have now looked into the connections between our new friendships, when we in the hopefully soon get our letter from Hogwats (in an age of way to much) and we are ready to meet them all, good as bad, Bellatrix Lestrange as Neville Longbottom! So now we go to the "library" with Hermione Granger herself and look all thw written material we can find - we are ready for the natural language processing! For this part the character pages of the Fandom wiki, the books and the manuscripts for the movies (besides movie 5) will be analyzed.
 
 ### Is the terminology of pages, book and movies compareable?
-
 
 The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds gives a quick overview of which words that apears at most in a given text. The wordclouds for the combined text of all character pages, books and movies are showed below respectively.
 
@@ -135,16 +133,16 @@ You've? Of guessed it! Of course "harry" and "potter" are two of the most common
 
 Actually many of the words are meaningful in the different wordsclouds and it is almost clearly to see which wordcloud that reflects each of the sources (also withour thee titles). While the wordcloud for the character pages showing many words that are connected to magic, the characters and the universe overall, the two other wordclouds also showing a lot of verbs, related to what the characters/actors do. 
 
-
 ### Sentiment of the characters - is the evil guys really the saddest?
 
-We all know that the different characters of the Harry Potter universe have a lot of different personalities, so let prepare ourself to meet them for the first time! Is dobby actual as happy as we believe or are other characters happier? We will now perform a sentiment analyze of all the characters of the Fandom Wiki, too see which are the happiest and saddest characters.
+We all know that the different characters of the Harry Potter universe have a lot of different personalities and just by reading their speech in the books or hearing their lines in the movies, we get an intuition about the this personality. With sentiment analysis, we can explore this! And questions like "is dobby actual as happy as we believe or are other characters happier?" can be answered!
+In this section a sentiment analyzis is performed to compare the sentiment of all characters of the Fandom Wiki. Afterwards the sentiment of the Fandom pages of some of the main characters, will be compared to the sentiment of the same characters given by the lines in the movies. Furthermore the sentiment development of these characters through the movies will be explored and the sentiment of the movires and books will be compared.
 
 A sentiment analyze is performed to happiness rank a text, due to the words that is used. The happpiness ranking of words are defined in the [LabMT](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752). The distribution of sentiment are plotted below. 
 
 <img src="images/HistPS.png" alt="hi" class="inline"/>
 
-Yes it is a bit disappointing, that the span between the happiest and saddest characters is so small. Is the Death Eaters actual not as bad as we assume? But nothing are as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the text on the Fandom Wiki is supposed to be written in a natural language. Even though it could be fun to see which characters we should meet with the happy face and which we should meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
+Yes it is a bit disappointing, that the span between the happiest and saddest characters is so small. Is the Death Eaters actual not as bad as we assume? But nothing are as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the Wiki texts are supposed to be written in a natural language. However it could be fun to see which characters we should meet with the happy face and which we should meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
 
 | Happiest characters| Saddest characters | 
 | ----------------------- | ----------------------- |
@@ -159,6 +157,6 @@ Yes it is a bit disappointing, that the span between the happiest and saddest ch
 |Unidentified 2000s Hogwarts student's parents| Unidentified wizard killed at the Quad battlements|
 |Falco Tremblay|Poppy Pomfrey's Death Eater Opponent|
  
-Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This sites is short, making the good words count a lot. 
+Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. 
  
 and found out where our favourite series has happiest and saddest! 
