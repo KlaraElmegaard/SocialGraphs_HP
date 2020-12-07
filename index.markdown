@@ -85,7 +85,7 @@ Communities are smaller locally dense connected subgraph in a network, where the
 
 Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/latest/api.html), has seperated the graph into networks.
 
-{% include Communities-in-Harry-Potter-fandom-universe (2).html%}
+{% include Communities-in-Harry-Potter-fandom-universe.html%}
 
 Many nodes, many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community, many of them are "undefined" or characters without a name, exciting! Can you find any other major characters in this community? Hint, look at the mid-bottom... Maybe the Dursleys.
 
@@ -113,6 +113,10 @@ So just by looking at the first five characters a pattern is shown: The large co
 |Nymphadora Tonks|Molly Weasley|Delphini|Ivy Warrington|Olympe Maxime|Credence Barebone|Minerva McGonagall|Patricia Rakepick|Corban Yaxley|Petunia Dursley|Penelope Fawley|
 |Lucius Malfoy|Remus Lupin|Aberforth Dumbledore|Daniel Page|Walden Macnair|Porpentina Goldstein|Neville Longbottom|Barnaby Lee|Xenophilius Lovegood|Hedwig|Marcus Belby|
 |Phineas Nigellus Black|Ginevra Weasley|Beedle the Bard|Fay Dunbar|Amelia Bones|Jacob Kowalski|Cedric Diggory|Rowan Khanna|Travers|Arabella Figg|Walter Parkin|
+
+You donøt have to be an Harry Potter expert to see that many of these communities are well-defined. Just look at community 2. This is the big "Weasley community" containing, at least all the most prominent characters of the Weasley familiy. This surname or familiy pattern are actually a pattern presented in many of these community. Another element that connects the community is places or occupation. Community 8 is clearly a "Hogwarts" network, containing many of the important characters attending or working on Hogwarts. A last pattern, among many others that can be explored in the graph, we want to point out is that the universe part series also have takes a part in the community seperation. Look at community 7, mostly containing characters from the "Fantastic beasts and where to find them@ movies series.
+
+Feel free to further explore the communities in the graph!
 
 
 ## Comparing language in books, movies and on characters pages 
@@ -155,6 +159,6 @@ Yes it is a bit disappointing, that the span between the happiest and saddest ch
 |Unidentified 2000s Hogwarts student's parents| Unidentified wizard killed at the Quad battlements|
 |Falco Tremblay|Poppy Pomfrey's Death Eater Opponent|
  
-Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This sites is not very short, making the good words count a lot. 
+Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This sites is short, making the good words count a lot. 
  
 and found out where our favourite series has happiest and saddest! 
