@@ -87,7 +87,7 @@ Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/
 
 {% include Communities-in-Harry-Potter-fandom-universe.html%}
 
-Many nodes, many edges, but funny to surf around! Can you find Harry Potter now? That is harder!
+Many nodes, many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community, many of them are "undefined" or characters without a name, exciting! Can you find any other major characters in this community? Hint, look at the mid-bottom... Maybe the Dursleys.
 
 Let's dig a bit deeper into these communities, and the distributions of characters in each community.
 
@@ -95,19 +95,24 @@ Let's dig a bit deeper into these communities, and the distributions of characte
 
 So the size of the communities variate a lot, but would it be meaningful to look at all of these. Let take a look at the first five characters of a small network and and large.
 
-| Community 0 | Community 1 | 
+| Community 16 | Community 1 | 
 | ----------------------- | ----------------------- |
-|Angus Buchanan| Bartemius Crouch Junior|
-Flora Buchanan| Alphard Black |
-Hamish Buchanan| Iola Black|
-John| Phineas Black|
-Luke| Sirius Black|
+|Celestina Warbeck| Bartemius Crouch Junior|
+|Ignatia Wildsmith| Alphard Black |
+|Lorcan d'Eath| Iola Black|
+|Devlin Whitehorn| Phineas Black|
+|Derwent Shimpling| Sirius Black|
 
-So just by looking at the first five characters a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only containing minor characters. Lets us therefore take a look at the 6 most connected charaters in all communities that have more than 100 characters.
+So just by looking at the first five characters a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only containing minor characters. That's why we look at the largest communities, so that we actually see some character that we know. Lets take a look at the 6 most connected characters in the 11 communities that contains more than 100 characters. These characters would be the ones, describing the features of the community the best
 
-
-
-
+| Community 1 | Community 2 | Community 3 |Community 4 |Community 5 |Community 7 |Community 8 |Community 9 |Community 10 |Community 11 |Community 18 |
+| ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
+|Sirius Black Ronald Weasley|Albus Dumbledore|Miranda Goshawk|Rubeus Hagrid|Gellert Grindelwald|Severus Snape|Jacob's sibling |Hermione Granger|Harry Potter|Mathilda Grimblehawk|
+|Horace Slughorn|Arthur Weasley|Tom Riddle|Merlin|Tom|Nagini|Draco Malfoy|Penny Haywood|Fenrir Greyback|Vernon Dursley|Grim Fawley|
+|Bellatrix Lestrange|George Weasley|Salazar Slytherin|Cadogan|Buckbeak|Newton Scamander|Dolores Umbridge|Peeves|Griphook|Dudley Dursley|Constance Pickering|
+|Nymphadora Tonks|Molly Weasley|Delphini|Ivy Warrington|Olympe Maxime|Credence Barebone|Minerva McGonagall|Patricia Rakepick|Corban Yaxley|Petunia Dursley|Penelope Fawley|
+|Lucius Malfoy|Remus Lupin|Aberforth Dumbledore|Daniel Page|Walden Macnair|Porpentina Goldstein|Neville Longbottom|Barnaby Lee|Xenophilius Lovegood|Hedwig|Marcus Belby|
+|Phineas Nigellus Black|Ginevra Weasley|Beedle the Bard|Fay Dunbar|Amelia Bones|Jacob Kowalski|Cedric Diggory|Rowan Khanna|Travers|Arabella Figg|Walter Parkin|
 
 ## Comparing language in books, movies and on characters pages 
 *"Because that's what Hermione does,' said Ron, shrugging. 'When in doubt, go to the library."*
