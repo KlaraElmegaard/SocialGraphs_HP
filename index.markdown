@@ -157,9 +157,28 @@ Yes it is a bit disappointing, that the span between the happiest and saddest ch
 |Unidentified 2000s Hogwarts student's parents| Unidentified wizard killed at the Quad battlements|
 |Falco Tremblay|Poppy Pomfrey's Death Eater Opponent|
  
-Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. 
+Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. And with words as "christmas" (average happiness 7.96), "mother" (average happiness 7.68) and "dinner" (average happiness 7.4), this is almost meant to one of the most happy characters!
 
-{% include https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister%}
+### But what about the main characters?
+
+The only character among the 10 happiest and saddest characters that we con put in a little connection to some major characters, that we know, is Nozéa Lestrange, only becoouse of the suranme Lestrange. But other than that this Nozéa, only pplays a minor role in the series. So our analysis of the most happy and sad characters is a bit boring for the greater audience, which do not give a sh..., about an undefined Death Eater or someones sister. Therefore an insight of the sentiment of some of the main characters are given. The sentiment of 11 of the most prominent characters Fandom pages are in the below table compared to the average sentiment of their lines in the movies. 
+
+| Character | Fandom sentiment | Movie sentiment| 
+| ----------------------- | ----------- |----------- |
+|Minerva McGonagall|5.524|5.669|
+|Albus Dumbledore| 5.504|5.657|
+|Harry Potter|5.452|5.459|
+|Dudley Dursley|5.402|5.592|
+|Rubeus Hagrid|5.450|5.439|
+|Ronald Weasley|5.447|5.362|
+|Hermione Granger|5.493|5.413|
+|Neville Longbottom| 5.425| 5.404|
+|Draco Malfoy| 5.498| 5.653|
+|Tom Riddle (Voldemort)| 5.457|5.315|
+|Severus Snape| 5.531| 5.447|
+
+
+
 ### Explainer Notebook and data
 - [View Explainer Notebook here](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/b7e9289e5e11f6d094204dc59c0d2ea6b877fd11/ExplainerNotebook.ipynb).
 - [Initial list of character names and links used to import Fandom character pages here](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPC.txt)
