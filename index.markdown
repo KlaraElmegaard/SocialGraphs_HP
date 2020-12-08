@@ -177,6 +177,9 @@ The only character among the 10 happiest and saddest characters that we con put 
 |Tom Riddle (Voldemort)| 5.457|5.315|
 |Severus Snape| 5.531| 5.447|
 
+{% include Character-sentiment-through-movies.html%}
+
+### And how does the overall sentiiment of the books and movies develop?
 
 
 ### Explainer Notebook and data
