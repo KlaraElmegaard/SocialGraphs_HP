@@ -159,4 +159,4 @@ Yes it is a bit disappointing, that the span between the happiest and saddest ch
  
 Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. 
  
-and found out where our favourite series has happiest and saddest! 
+[View Explainer Notebook here](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/b7e9289e5e11f6d094204dc59c0d2ea6b877fd11/ExplainerNotebook.ipynb)
