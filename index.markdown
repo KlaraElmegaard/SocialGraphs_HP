@@ -162,4 +162,4 @@ Of course the Death Eaters are the saddest characters! And even the undefined on
 ### Explainer Notebook and data
 - [View Explainer Notebook here](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/b7e9289e5e11f6d094204dc59c0d2ea6b877fd11/ExplainerNotebook.ipynb).
 - [Initial list of character names and links used to import Fandom character pages here](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPC.txt)
-- [Full dataset]()
+- [Cleaned dataset](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv)
