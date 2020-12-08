@@ -158,7 +158,6 @@ Yes it is a bit disappointing, that the span between the happiest and saddest ch
 |Falco Tremblay|Poppy Pomfrey's Death Eater Opponent|
  
 Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. 
- 
 
 {% include https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister%}
 ### Explainer Notebook and data
