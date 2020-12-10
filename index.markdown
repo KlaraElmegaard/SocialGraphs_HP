@@ -153,7 +153,7 @@ A sentiment analysis is performed to rank a text on a sad/happy score based on t
 
 <img src="images/HistPS.png" alt="hi" class="inline"/>
 
-Yes, it is a bit disappointing that the span between the happiest and saddest characters is so small. Are the Death Eaters actually not as bad as we assume? But nothing is as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the Wiki texts are supposed to be written in a natural language. However, it could be fun to see which characters we will meet with a happy face and which we will meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
+Yes, it is a bit disappointing that the span between the happiest and saddest characters is so small. Are the Death Eaters actually not as bad as we assume? But nothing is as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the Wiki texts are supposed to be written in a natural language. However, it could be fun to see which characters we will meet and inviting them for at chit chat over some pumpkin juice and which we will meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
 
 | Happiest characters| Saddest characters | 
 | ----------------------- | ----------------------- |
@@ -173,25 +173,25 @@ Of course the Death Eaters are the saddest characters! And beside these, the und
 ### But what about the main characters?
 Nozéa Lestrange is the only character among the 10 happiest and saddest characters that we can put in a little connection to some major characters that we know. And that is only due to surname Lestrange. The other characters only play a minor role in the series. So our analysis above of the most happy and sad characters is a bit boring for the greater audience, which do not give a sh.. about an undefined Death Eater or someone's sister. Therefore, we provide an insight of the sentiment of some of the main characters. The sentiment of 11 of the most prominent characters' Fandom pages are compared in the table below to the average sentiment of their lines in the movies. 
 
-| Character | Fandom sentiment | Movie sentiment| 
-| ----------------------- | ----------- |----------- |
-|Minerva McGonagall|5.524|5.669|
-|Albus Dumbledore| 5.504|5.657|
-|Harry Potter|5.452|5.459|
-|Dudley Dursley|5.402|5.592|
-|Rubeus Hagrid|5.450|5.439|
-|Ronald Weasley|5.447|5.362|
-|Hermione Granger|5.493|5.413|
-|Neville Longbottom| 5.425| 5.404|
-|Draco Malfoy| 5.498| 5.653|
-|Tom Riddle (Voldemort)| 5.457|5.315|
-|Severus Snape| 5.531| 5.447|
+| Character | Fandom sentiment | Av. sentiment of movies| Difference |
+| ----------------------- | ----------- |----------- |----------- |
+|Minerva McGonagall                     |5.6696                   |5.5237        |0.1459|
+|Albus Dumbledore                       |5.6569                   |5.5044        |0.1525|
+|Harry Potter                           |5.4590                   |5.4521        |0.0068|
+|Dudley Dursley                         |5.5922                   |5.4024        |0.1898|
+|Rubeus Hagrid                          |5.4393                   |5.4503        |0.0110|
+|Ronald Weasley                         |5.3623                   |5.4467        |0.0843|
+|Hermione Granger                       |5.4129                   |5.4930        |0.0801|
+|Neville Longbottom                     |5.4043                   |5.4253        |0.0210|
+|Draco Malfoy                           |5.6533                   |5.4978        |0.1555|
+|Tom Riddle                             |5.3153                   |5.4572        |0.1418|
+|Severus Snape                          |5.4474                   |5.5311        |0.0837|
 
-XXX mangler 
+Well done, all your Harry Potter Fandom authors out there! The sentiment of the Fandom pages matches the sentiment of the movies pretty good. The lowest difference is between the two sources is for Harry Potter while the largest difference is for Dudley Dursley. Lets dig even deeper and see a possible reason for this observations. Below a plot of the characters sentiment through the movies is shown. 
 
 {% include Character-sentiment-through-movies.html%}
 
-XXX mangler
+First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - as.
 
 
 ### How does the overall sentiiment of the books and movies develop?
