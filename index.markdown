@@ -191,7 +191,8 @@ Well done, all your Harry Potter Fandom authors out there! The sentiment of the 
 
 {% include Character-sentiment-through-movies.html%}
 
-First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - as.
+First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - the lower the word the lower the sentiment. 
+Alright lets look at the characters development over time. The sentiment patterns of the trio (Harry, Ron and Hermione) are mostly similar. Could it be different? But Harry actually variate a bit from the other two. An explanation - he is the overall leading role! His 
 
 
 ### How does the overall sentiiment of the books and movies develop?
