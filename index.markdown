@@ -10,29 +10,29 @@ th {
 
 
 ## Networks, data and... Harry Potter??
-Were you disappointed when you turned 11 and did not recieve a letter from an owl inviting you to start at Hogwarts, School of Witchcraft and Wizardry? If so, you are like us! 
+Were you disappointed when you turned 11 and did not recieve a letter from an owl inviting you to start at Hogwarts School of Witchcraft and Wizardry? If so, you are like us! 
 And if you still want to go to Hogwarts and explore the big universe and meet the characters, you have come to the right place! 
 
-Through network thoery we will analyse the known and unknown relationships between the fantastic and wonderful characters that appear in the universe. Maybe we will discover connections between bloodtype (muggles, pure-blood e.g.) and the four houses of Hogwarts. With natural language processing, the language of the character pages, the books and scripts of the movies will be analysed through sentiment analysis and wordclouds.
+Through network theory we will analyze the known and unknown relationships between the fantastic and wonderful characters who appear in the universe. Maybe we will discover connections between blood status (muggles, pure-blood e.g.) and the four houses of Hogwarts. Using natural language processing, we will analyze the language of the character pages, the books and scripts of the movies through sentiment analysis and wordclouds.
 
 
 
 ## Data
-Where can we get enough information to greate and explore the universe of characters? Lucky for us, a huge [Fandom Wiki](https://harrypotter.fandom.com/wiki/Main_Page) exists for the Harry Potter Universe. We used this to download the wikipedia pages for all the characters. From each wiki-page we used regular expression to get all the links but also to gather informations such af house, blood and gender. Since the language on wiki-pages are (supposed to be) fairly neutral, we also use text analysis to analyse the [books](http://glozman.com/textpages.html) and the [movie scripts](https://github.com/asmitakulkarni/QuoteGenerator/tree/master/harrypotterscripts). Regarding the movie scrips, the sentiment of some of the main characters will be considered over time.
+Where can we get enough information to create and explore the universe of characters? Lucky for us, a huge [Fandom Wiki](https://harrypotter.fandom.com/wiki/Main_Page) exists for the Harry Potter Universe. We used this to download the Wikipedia pages for all the characters. From each wiki page, we used regular expression to get all the links but also to gather information such as house, blood status and gender. Since the language on wiki pages is (supposed to be) fairly neutral, we also use text analysis to analyze the [books](http://glozman.com/textpages.html) and the [movie scripts](https://github.com/asmitakulkarni/QuoteGenerator/tree/master/harrypotterscripts). Regarding the movie scripts, the sentiment of some of the main characters will be considered over time.
 
 
 
 ## Interactions Between Characters - The Harry Potter Universe as a Graph
-To be able to use our cool netowrk analysis tools, we first need to be able to represent the characters in a graph with nodes and edges. Each character will have a node. There will be an edge from lets say Harry Potter to Hermione, if Harry Potter's wiki-page links to Hermione's. Doing this, we got a graph consisting of 3,930 nodes and 14,916 edges. Extracting the giant connected componant, the graph ended up with 2,643 nodes and 14,525 edges. 
+To be able to use our cool network analysis tools, we first need to be able to represent the characters in a graph with nodes and edges. Each character will have a node. There will be an edge from let's say Harry Potter to Hermione, if Harry Potter's wiki page links to Hermione's. Doing this, we got a graph consisting of 3,930 nodes and 14,916 edges. Extracting the giant connected component, the graph ended up with 2,643 nodes and 14,525 edges. 
 
-Before we go any further into analysing the network, take a look at the graph below. If you hover over a node, the character's name and the number of links will appear. The nodes are also colored by their number of links. Can you guess who the bright yellow node represent? Harry Potter, of cause, being the main character of our universe. Using the toolbar in the topright, you can e.g. zoom in and out. Press the little house to reset the illustrateion. 
+Before we go any further into analyzing the network, take a look at the graph below. If you hover over a node, the character's name and the number of links will appear. The nodes are also colored by their number of links. Can you guess who the bright yellow node represents? Harry Potter, of course, as he is the main character of our universe. Using the toolbar in the top right corner, you can e.g. zoom in and out. Press the little house to reset the illustration. 
 
 {% include file.html %}
 
 
 
 ## Looking into some Basic Statistics
-If you again look at the above plot, a lot of the nodes are dark blue meaning that they have very few links/edges. So a lot of characters has a very low number of edges? We sill look further into this by analyzing the networks degree distribution. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most connected characters, both in regards to in- and out-degrees. 
+If you look at the plot above again, a lot of the nodes are dark blue, meaning that they have very few links/edges. So a lot of characters have a very low number of edges? We will look further into this by analyzing the degree distribution of the network. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most connected characters, both in regards to in- and out-degrees. 
 
 | Top in-going | Character | Number of in-going links | | Top out-going | Character | Number of out-going links |
 | ----- | ------------- | ------------- | - | ----- | ------------- | ------------- |
@@ -42,29 +42,30 @@ If you again look at the above plot, a lot of the nodes are dark blue meaning th
 | 4: | Sirius Black | 185 | | 4: | Tom Riddle| 124 |
 | 5: | Severus Snape | 177 | | 5: | Hermione Granger | 115 |
 
-We see that the character most other characters link to is Harry Potter (surprise). Number two to five is also big characters in the Harry Potter Universe. It is noticable that Harry Potter (nr. 1) is linked to more than twice as mush as Hermione Grander (nr. 2). Imagine that you didn't have prior knowledge about the Universe. Then this would tell you that Harry Potter indead is the main chracter. We see that ALbus Dumbledore is the character that links to most other characters, closely followed by Harry Potter. Next we see Ronald weasley and Tom Riddle did not appear in top five for the in-degree distribution. There could be a correlation between the number of outgoing links and the length of a character's wiki-page. 
+We see that the character most other characters link to is Harry Potter (surprise). Number two to five are also big characters in the Harry Potter universe. It is noticeable that Harry Potter (nr. 1) is linked to more than twice as much as Hermione Granger (nr. 2). Imagine that you didn't have prior knowledge about the universe. Then this would tell you that Harry Potter indeed is the main character. We see that Albus Dumbledore is the character who links to most other characters, closely followed by Harry Potter. Next we see that Ronald Weasley and Tom Riddle did not appear in top five for the in-degree distribution. All of this implies that there might be a correlation between the number of outgoing links and the length of a character's wiki page. 
 
-To get a better overview, we plot the degree distribution. First in two histograms below. Here we see that most characters has an indegree of 0, meaning that no characters link to their page. This makes sense as we have included a lot of very small (to most unknown) character. We also see that very few characters has a high number of ingoing links - so few you almost can see them on the plot. If we consider the out-degree distribution, we again see many characters woth a small number of outgoing links and few characters with a high number of outgoing links. Here we again conclude that less importent characters have few outgoing links - probabaly due to their wiki-page being very short and them not having very much interaction with other characters. 
+To get a better overview, we plot the degree distribution in the two histograms below. Here we see that most characters have an in-degree of 0, meaning that no characters link to their page. This makes sense, as we have included a lot of very small (and unknown) characters. We also see that very few characters have a high number of in-going links - so few you almost can't see them on the plot. If we consider the out-degree distribution, we again see many characters with a small number of outgoing links and few characters with a high number of outgoing links. Here we again conclude that less important characters have few outgoing links - probably due to their wiki page being very short and them not having very much interaction with the other characters. 
 
 <img src="images/histindegree.png" alt="hi" class="inline"/>
 <img src="images/histoutdegree.png" alt="hi" class="inline"/>
 
-If we next consider the counts from the above histograms on a log-log scale, we a able to identify that both the in- and the out degree distribution resembles that of a scale free network more than that of a random network. To get a more thorough and technical explanation of this, please visit the explainer notebook (link in the bottom). 
+Next, we consider the counts from the histograms above on a log-log scale. We are able to identify that both the in- and the out degree distribution resemble that of a scale free network more than that of a random network. To get a more thorough and technical explanation of this, please visit the explainer notebook (link in the bottom). 
 
 <img src="images/llinoutdegree.png" alt="hi" class="inline"/>
 
 
 
-## Is their a seperation of the houses or maybe the blood-types in our network?
+## Is there a separation into houses or maybe blood status in our network?
 *“Not Slytherin, eh?” said the small voice. “Are you sure? You could be great, you know, it’s all here in your head, and Slytherin will help you on the way to greatness, no doubt about that — no? Well, if you’re sure — better be GRYFFINDOR!” - Harry Potter and the sorting hat*
 
-So now that we have a better understandig of out netowrk, we will begin to look for patterns in the network. 
+So now that we have a better understanding of out network, we will begin to look for patterns in the network. 
 
-On Hogwards, the school is seperated into four houses: Griffendor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befrind and spend a lot of time with. The seperation between Griffendor and SLytherin and especially pronount - Griffendor being the 'good' house and Slytherin the 'evil'. It is therefore interesten to see if this separation is present in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses, i.e. character's wiki pages is more connected (link more) to characters from the same house than chracters from different houses. 
+XXXXXXXXXXX
+On Hogwarts, the school is separated into four houses: Gryffindor, Hufflepuff, Rawenclaw and Slytherin. In the books and films, it is obvious that which house you end up in says a lot about who you befriend and spend a lot of time with. The separation between Griffendor and SLytherin and especially pronount - Griffendor being the 'good' house and Slytherin the 'evil'. It is therefore interesten to see if this separation is present in the network as well. To investigate this, we will consider the number of links within each house and compare this to the number of links between the houses. If we see more links within the houses than between teh house, we can argue for a sepearation between the houses, i.e. character's wiki pages is more connected (link more) to characters from the same house than chracters from different houses. 
 
-In the Harry Potter books/movies, Voldemort (the evil guy) is out to kill all muggle-borns (wizards with non-magic parrent) - also known as mudbloods! Thus the books exploit the seperation of pure-blood, half-bood, muggle-born and of cause non-magic people. It is therefore interesting to see this distinguishing in the network. 
+In the Harry Potter books/movies, Voldemort (the evil guy) is out to kill all muggle-borns (wizards with non-magic parents) - also known as mudbloods! Thus the books exploit the separation of pure-bloods, half-bloods, muggle-borns and of course non-magic people. It is therefore interesting to see if these distinctions appear in the network. 
 
-We create one subgraph consisting only of characters from the four houses and one consisting only of characters from the above four blood-types. Below the number of nodes from each house and each blood type is shown.
+We create one subgraph consisting only of characters from the four houses and one consisting only of characters from the four types of blood status. Below, the number of nodes from each house and each blood status is shown.
 
 | Number of characters in | | | Number of characters in | |
 | ----------------------- | ---- | | ----------------------- | ---- |
@@ -73,37 +74,38 @@ We create one subgraph consisting only of characters from the four houses and on
 | hufflepuff: | 97 | | pure-blood: | 363 |
 | gryffindor: |	155 | | muggle-born: | 23 |
 
-In total we have 510 characters in the House-graph and 654 in the Blood-graph. Since we have $4^4=16$ different possible combinations, we consider the links in a heatmap
+In total we have 510 characters in the House-graph and 654 in the Blood-graph. Since we have $4^4=16$ different possible combinations, we consider the links in a heatmap.
 
 <img src="images/heat_houses_blood.png" alt="hi" class="inline"/>
 
-On the left, we see that characters from Griffendor link most to characters from their own house. The same is the case for the Slytherin house. But characters from both Rawenclaw and Hufflepuff link mostly to characters in Gryffendor. An axplanation could be that Gryffendor and SLytherun is both big/importent houses with importing characters whereas Ravenclaw and Hufflepuff mostly consists of smaller/less importent characters - thus not characters that are linked very much to.
+On the left, we see that characters from Gryffindor link most to characters from their own house. The same is the case for the Slytherin house. But characters from both Rawenclaw and Hufflepuff link mostly to characters in Gryffindor. An explanation could be that Gryffindor and Slytherin are both big/important houses with important characters whereas Ravenclaw and Hufflepuff mostly consist of smaller/less important characters - thus not characters that are linked to very much.
 
-On the right, we see that pure-bloods, half-bloods and muggle-borns all link most to pure-bloods where non-magic people link mostly to other non-magic people. All four groups link the second most til half-bloods. In generel not many characters link to non-magic people and muggle-born. On the other hand non-magic people link mostly to non-magic people and second most to half-bloods. Thus we might see a seperation between non-magic people and magic people in general. This makes sense, since we also in the book see a clear seperation of the non-magic people and the magic people. Thus even though the generel purpose for the evil guy (Voldemort) is to seperate pure-bloods and muggle-born (partly also half-bloods), we do not see this difference in the characters' wikipages. In general, we do not see as pronounced differences for the links with regards to blood as for the houses.
+On the right, we see that pure-bloods, half-bloods and muggle-borns all link mostly to pure-bloods, whereas non-magic people link mostly to other non-magic people. All four groups link second most to half-bloods. In general, not many characters link to non-magic people and muggle-born. However, non-magic people link mostly to non-magic people and second most to half-bloods. Thus we might see a separation between non-magic people and magic people in general. This makes sense, since we also see a clear separation of the non-magic people and the magic people in the books. Thus even though the general purpose for the evil guy (Voldemort) is to separate pure-bloods and muggle-born (partly also half-bloods), we do not see this difference in the characters' wiki pages. In general, we do not see as pronounced differences for the links with regards to blood status as for the houses.
 
-Since we mostly saw a seperation between the houses, we illustrate this graph where the nodes are colored per house.
+Since we mainly saw a separation between the houses, we illustrate this graph where the nodes are colored according to house.
 
 {% include Houses-in-Harry-Potter-fandom-universe.html %}
 
-Overall we saw a seperation between especially the Griffendor house and the Slytherin house, as each house linked more to its own house than to the other three houses, respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuf house, they linked mostly to the Griffendor house and second most to themselves. It is interesting that they link second must to them selfs and not second most to Slytherin. This shows that Griffendor is a bigger or more importens house than Slytherin. It is also noted that the distance in how much Griffendor links to Slytherin compared to Ravenclaw and Hufflepuf is not at big as the distance in how much Slytherin links to Griffendor compared to Ravenclaw and Hufflepuf. Meaning that Slytherin do not link very much to Ravenclaw and Hufflepuf compared to Griffendor. This again underlines that Griffendor is the house everything centers about with Slytheren being the second biggest. 
+XXXXXXXXX
+Overall we saw a separation between especially the Griffendor house and the Slytherin house, as each house linked more to its own house than to the other three houses, respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuf house, they linked mostly to the Griffendor house and second most to themselves. It is interesting that they link second must to them selfs and not second most to Slytherin. This shows that Griffendor is a bigger or more importens house than Slytherin. It is also noted that the distance in how much Griffendor links to Slytherin compared to Ravenclaw and Hufflepuf is not at big as the distance in how much Slytherin links to Griffendor compared to Ravenclaw and Hufflepuf. Meaning that Slytherin do not link very much to Ravenclaw and Hufflepuf compared to Griffendor. This again underlines that Griffendor is the house everything centers about with Slytheren being the second biggest. 
 
 
 ## Communities between the characters - are all characters connected as we believe?
 *"You're not going mad or anything. I can see them too." - Luna Lovegood*
 
-Communities are smaller and locally dense connected subgraph in a network, where the nodes are more likely to connect to other nodes in the same community [1](http://networksciencebook.com/chapter/9#basics). The network of all characters in the Harry Potter universe forms such communities! Some are obvious, but is there communites that we did not know about? Are some enimies more connected than friends, alliances or even family? Let's find out!
+Communities are smaller and locally dense connected subgraphS in a network, where the nodes are more likely to connect to other nodes in the same community [1](http://networksciencebook.com/chapter/9#basics). Such communities appear in the network of all the characters in the Harry Potter universe! Some are obvious, but are there communities that we did not know about? Are some enemies more connected than friends, alliances or even family? Let's find out!
 
 Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/latest/api.html), has seperated the graph into networks.
 
 {% include Communities-in-Harry-Potter-fandom-universe.html%}
 
-Many nodes and many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community. Many of them are "undefined" something or characters without a name, exciting! Can you find any other major characters in this community? Hint, look at the mid-bottom... Maybe the Dursleys.
+Many nodes and many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community. Many of them are "undefined" something or characters without a name. Exciting! Can you find any other major characters in this community? Hint: look at the mid-bottom... Here we see the Dursleys.
 
-Let's dig a bit deeper into these communities, and the distributions of characters in each community.
+Let's dig a bit deeper into these communities and the distributions of characters in each community.
 
 <img src="images/com_dist.png" alt="hi" class="inline"/>
 
-So the size of the communities variate a lot, but would it be meaningful to look at all of these. Let take a look at the first five characters of a small network and of large network.
+So the size of the communities varies a lot, but would it be meaningful to look at all of these? Let's take a look at the first five characters of a small network and of s large network.
 
 | Community 16 | Community 1 | 
 | ----------------------- | ----------------------- |
@@ -113,7 +115,7 @@ So the size of the communities variate a lot, but would it be meaningful to look
 |Devlin Whitehorn| Phineas Black|
 |Derwent Shimpling| Sirius Black|
 
-Just by looking at the first five characters, a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only contains minor characters. That's why we look at the largest communities, so that we actually see some character that we know. Lets take a look at the 6 most connected characters in the 11 communities that contains more than 100 characters. These characters would be the ones, describing the features of the community the best.
+Just by looking at the first five characters, a pattern emerges: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only contains minor characters. That's why we look at the largest communities, so that we actually see some character that we know. Let's take a look at the 6 most connected characters in the 11 communities which contain more than 100 characters. These characters would be the ones describing the features of the community the best.
 
 | Community 1 | Community 2 | Community 3 |Community 4 |Community 5 |Community 7 |Community 8 |Community 9 |Community 10 |Community 11 |Community 18 |
 | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
@@ -124,36 +126,36 @@ Just by looking at the first five characters, a pattern is shown: The large comm
 |Lucius Malfoy|Remus Lupin|Aberforth Dumbledore|Daniel Page|Walden Macnair|Porpentina Goldstein|Neville Longbottom|Barnaby Lee|Xenophilius Lovegood|Hedwig|Marcus Belby|
 |Phineas Nigellus Black|Ginevra Weasley|Beedle the Bard|Fay Dunbar|Amelia Bones|Jacob Kowalski|Cedric Diggory|Rowan Khanna|Travers|Arabella Figg|Walter Parkin|
 
-You don't have to be an Harry Potter expert to see that many of these communities are well-defined. Look at community 2 as an example. This is the big "Weasley community" containing, at least, all the most prominent characters of the Weasley familiy. This surname or familiy pattern is actually a pattern presented in many of these communities. Another element that connects some of the communities is places or occupation. Community 8 is clearly a "Hogwarts" network, containing many of the important characters attending or working on Hogwarts. A last pattern, among many others that can be explored in the graph, we want to point out is that some of the universe's other series also takes a part in the community seperation. E.g. look at community 7. Here most characters are from the "Fantastic beasts and where to find them" movies series. The "house" and "blood-type" patterns, are not directly showed in these large communities, indicating that e.g. the factors described in this sections, have a stronger impact on the relationships between the characters than the houses and the blood types.
+You don't have to be an expert on Harry Potter to see that many of these communities are well-defined. Look at community 2 as an example. This is the big "Weasley community" containing, at least, all the most prominent characters of the Weasley familiy. This surname or familiy pattern is actually a pattern present in many of these communities. Another element that connects some of the communities is places or occupation. Community 8 is clearly a "Hogwarts" network, containing many of the important characters attending or working at Hogwarts. A last pattern we want to point out is that some of the other series of the universe also take a part in the community separation. E.g. look at community 7. Here, most characters are from the "Fantastic beasts and where to find them" movie series. The "house" and "blood status" patterns are not directly showed in these large communities, indicating that e.g. the factors described in this sections have a stronger impact on the relationships between characters than the houses and blood status do.
 
 Feel free to further explore the communities in the graph!
 
-## Comparing language in books, movies and on characters pages 
+## Comparing language in books, movies and character pages 
 *"Because that's what Hermione does,' said Ron, shrugging. 'When in doubt, go to the library."*
 
-We have now looked into the connections between our upcoming friendships, when we hopefully soon get our letter from Hogwats (in an age of way to much). We are ready to meet them all, good as bad, Bellatrix Lestrange as Neville Longbottom! Now we go to the "library" with Hermione Granger herself and look through all the written material we can find - we are ready for the natural language processing! Here the characters' (Fandom) wiki-pages, the books and the scripts for the movies (besides movie 5) will be analyzed.
+We have now looked into the connections between our upcoming friendships for when we hopefully get our letter from Hogwarts soon (in an age of way too much). We are ready to meet them all, good as bad, Bellatrix Lestrange as well as Neville Longbottom! Now we go to the "library" with Hermione Granger herself and look through all the written material we can find; we are ready for the natural language processing! Here the characters' (Fandom) wiki pages, the books and the scripts for the movies (except movie 5) will be analyzed.
 
-### Is the terminology of pages, book and movies compareable?
+### Are the terminologies of pages, books and movies comparable?
 
-The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds give a quick overview of which words appears the most in a given text. The wordclouds for the combined text of all characters' pages, books and movies are showed below, respectively. Any guesses on promonent words?
+The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds give a quick overview of which words appear the most in a given text. The wordclouds for the combined text of all characters' pages, books and movies are showed below. Any guesses on prominent words?
 
 <img src="images/wordcluds.png" alt="hi" class="inline"/>
 
 You guessed correctly! Of course "harry" and "potter" are two of the most common words. 
 
-Actually many of the words are meaningful in the different wordsclouds and it is clear which wordcloud that reflects each of the sources (also without the titles). While the wordcloud over the characters' wiki-pages show many words that are connected to magic, the characters and the universe overall, the two other wordclouds also show a lot of verbs, indicating what the characters/actors do - illustrating that it is fiction.
+Actually, many of the words are meaningful in the different wordclouds and it is clear which wordcloud reflects each of the sources (also without the titles). The wordcloud for the characters' wiki pages show many words connected to magic, the characters and the universe overall. The wordclouds for the books and the movies also include a lot of verbs, indicating what the characters/actors do - illustrating that these are narratives and not just statements of facts.
 
 ### Sentiment of the characters - are the evil guys really the saddest?
 
-We all know that the different characters of the Harry Potter universe have a lot of different personalities and just by reading their lines in the books or hearing their lines in the movies, we get an intuition about thier personalities. With sentiment analysis, we can explore this! And questions like "is Dobby actual as happy as we believe or are other characters happier?" and "is Snape really that mean/sad?" can be answered!
+We all know that the different characters of the Harry Potter universe have a lot of different personalities and just by reading their lines in the books or hearing their lines in the movies, we get a sense of their personalities. With sentiment analysis, we can explore this! And questions like "is Dobby actually as happy as we believe or are other characters happier?" and "is Snape really that mean/sad?" can be answered!
 
-In this section a sentiment analyzis is performed to compare the sentiment of all characters in the Fandom Wiki. Afterwards the sentiment of the Fandom pages of some of the main characters will be compared to the sentiment of the same characters' lines in the movies. Furthermore the sentiment development of these characters through the movies will be explored and the sentiment of the movies and books will be compared.
+In this section, a sentiment analysis is performed to compare the sentiment of all characters in the Fandom Wiki. Afterwards, the sentiment of the Fandom pages of some of the main characters will be compared to the sentiment of the same characters' lines in the movies. Furthermore, the sentiment development of these characters through the movies will be explored and the sentiment of the movies and books will be compared.
 
-A sentiment analyze is performed to rank a text on a sad/happy score, based to the words that is used. The happpiness ranking of words are defined in the [LabMT](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752). The distribution of sentiments are plotted below. 
+A sentiment analysis is performed to rank a text on a sad/happy score based on the words used. The happpiness ranking of words are defined in the [LabMT](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752). The distribution of sentiments are plotted below. 
 
 <img src="images/HistPS.png" alt="hi" class="inline"/>
 
-Yes, it is a bit disappointing that the span between the happiest and saddest characters is so small. Is the Death Eaters actual not as bad as we assume? But nothing are as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the Wiki texts are supposed to be written in a natural language. However, it could be fun to see which characters we will meet with a happy face and which we will meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
+Yes, it is a bit disappointing that the span between the happiest and saddest characters is so small. Are the Death Eaters actually not as bad as we assume? But nothing is as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the Wiki texts are supposed to be written in a natural language. However, it could be fun to see which characters we will meet with a happy face and which we will meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
 
 | Happiest characters| Saddest characters | 
 | ----------------------- | ----------------------- |
@@ -168,10 +170,10 @@ Yes, it is a bit disappointing that the span between the happiest and saddest ch
 |Unidentified 2000s Hogwarts student's parents| Unidentified wizard killed at the Quad battlements|
 |Falco Tremblay|Poppy Pomfrey's Death Eater Opponent|
  
-Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, are nor popular/well known. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. And with words as "christmas" (average happiness 7.96), "mother" (average happiness 7.68) and "dinner" (average happiness 7.4), this is almost meant to one of the most happy characters!
+Of course the Death Eaters are the saddest characters! And beside these, the undefined ones, who have been either knocked out or killed are sad as well. It is a sad life - even their "names" indicate that. The happpiest character on the other hand, is not popular/well known. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. And with words such as "christmas" (average happiness 7.96), "mother" (average happiness 7.68) and "dinner" (average happiness 7.4), this is almost meant to be one of the most happy characters!
 
 ### But what about the main characters?
-The only character among the 10 happiest and saddest characters that we can put in a little connection to some major characters that we know, is Nozéa Lestrange - only because of the suranme Lestrange. The other characters only play a minor role in the series. So our above analysis of the most happy and sad characters is a bit boring for the greater audience, which do not give a sh.. about an undefined Death Eater or someones sister. Therefore an insight of the sentiment of some of the main characters are given. The sentiment of 11 of the most prominent characters' Fandom pages are in the below table compared to the average sentiment of their lines in the movies. 
+Nozéa Lestrange is the only character among the 10 happiest and saddest characters that we can put in a little connection to some major characters that we know. And that is only due to surname Lestrange. The other characters only play a minor role in the series. So our analysis above of the most happy and sad characters is a bit boring for the greater audience, which do not give a sh.. about an undefined Death Eater or someone's sister. Therefore, we provide an insight of the sentiment of some of the main characters. The sentiment of 11 of the most prominent characters' Fandom pages are compared in the table below to the average sentiment of their lines in the movies. 
 
 | Character | Fandom sentiment | Movie sentiment| 
 | ----------------------- | ----------- |----------- |
