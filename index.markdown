@@ -135,7 +135,7 @@ We have now looked into the connections between our upcoming friendships for whe
 
 ### Are the terminologies of pages, books and movies comparable?
 
-The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds give a quick overview of which words appear the most in a given text. The wordclouds for the combined text of all characters' pages, books and movies are showed below. Any guesses on prominent words?
+The terminology of written material can roughly be interpreted with wordclouds. Wordclouds give a quick overview of which words appear the most in a given text. The wordclouds for the combined text of all characters' pages, books and movies are showed below. Any guesses on prominent words?
 
 <img src="images/wordcluds.png" alt="hi" class="inline"/>
 
