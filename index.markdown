@@ -15,17 +15,15 @@ And if you still want to go to Hogwarts and explore the big universe and meet th
 
 Through network theory we will analyze the known and unknown relationships between the fantastic and wonderful characters who appear in the universe. Maybe we will discover connections between blood status (muggles, pure-blood e.g.) and the four houses of Hogwarts. Using natural language processing, we will analyze the language of the character pages, the books and scripts of the movies through sentiment analysis and wordclouds.
 
-
-
 ## Data
 Where can we get enough information to create and explore the universe of characters? Lucky for us, a huge [Fandom Wiki](https://harrypotter.fandom.com/wiki/Main_Page) exists for the Harry Potter Universe. We used this to download the Wikipedia pages for all the characters. From each wiki page, we used regular expression to get all the links but also to gather information such as house, blood status and gender. Since the language on wiki pages is (supposed to be) fairly neutral, we also use text analysis to analyze the [books](http://glozman.com/textpages.html) and the [movie scripts](https://github.com/asmitakulkarni/QuoteGenerator/tree/master/harrypotterscripts). Regarding the movie scripts, the sentiment of some of the main characters will be considered over time.
-
-
 
 ## Interactions Between Characters - The Harry Potter Universe as a Graph
 To be able to use our cool network analysis tools, we first need to be able to represent the characters in a graph with nodes and edges. Each character will have a node. There will be an edge from let's say Harry Potter to Hermione, if Harry Potter's wiki page links to Hermione's. Doing this, we got a graph consisting of 3,930 nodes and 14,916 edges. Extracting the giant connected component, the graph ended up with 2,643 nodes and 14,525 edges. 
 
 Before we go any further into analyzing the network, take a look at the graph below. If you hover over a node, the character's name and the number of links will appear. The nodes are also colored by their number of links. Can you guess who the bright yellow node represents? Harry Potter, of course, as he is the main character of our universe. Using the toolbar in the top right corner, you can e.g. zoom in and out. Press the little house to reset the illustration. 
+
+{% include Network-of-Harry-Potter-Universe.html %}
 
 ## Looking into some Basic Statistics
 If you look at the plot above again, a lot of the nodes are dark blue, meaning that they have very few links/edges. So a lot of characters have a very low number of edges? We will look further into this by analyzing the degree distribution of the network. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most connected characters, both in regards to in- and out-degrees. 
