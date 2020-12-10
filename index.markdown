@@ -181,7 +181,7 @@ Nozéa Lestrange is the only character among the 10 happiest and saddest charact
 
 Well done, all you Harry Potter Fandom authors out there! The sentiment of the Fandom pages matches the sentiment of the movies pretty good. The lowest difference between the two sources is for Harry Potter while the largest difference is for Dudley Dursley. Lets dig even deeper and see a possible reason for this observations. Below a plot of the characters sentiment through the movies is shown. 
 
-XXX KLARA
+{% include Character-sentiment-through-movies.html%}
 
 First of all, lets investigate the hig/low diffrences. We see no sentiment observation for Dudley for some of the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
 
@@ -193,13 +193,13 @@ Feel free to explore the sentiment even more in the interactive plot!
 
 ### How does the overall sentiment of the books and movies develop?
 
-Now, we have explored the sentiment of each character, but do you really want to go to Hogwarts if all the overall sentiment is sad (XXX er det overall sad KLARA? ... Ok, we don't actuallty think it is. But lets look at the sentment throughout the books and movies and compare them to each other. Below, the overall sentiment of each book and movie is plotted (except the fifth book and last part of the seventh movie, as data quality for these were not good enough). Lets find out which of the seven years on Hogwarts we shall really look forward to, when we finally get our letters! 
+Now, we have explored the sentiment of each character, but do you really want to go to Hogwarts if if the sentement analysis shows is just low through the whole series? Ok, we don't actuallty think it is. But lets look at the sentiment throughout the books and movies and compare them to each other. Below, the overall sentiment of each book and movie is plotted (except the fifth book and last part of the seventh movie, as data quality for these were not good enough). Lets find out which of the seven years on Hogwarts we shall really look forward to, when we finally get our letters! 
 
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
 
-Overall, movies are "more happy" than the books, but they follow the same pattern. The highest sentiment is in fourth and sixth movie. It is also here that we have the largest difference between the book and the movies. But why is the sentiment of the movie scripts higher than the sentiment of the books? It could be beacuse the books have to explicitly write the sad words down, which brings the score down, whereas in the movies they can just show the feelings. Looking at the y-axis, it should be noted that the overall difference is small though.
+Overall, movies are "more happy" than the books, but they follow the same pattern. Book one has the highest sentiment overall for the books. An explanation is that books develop over time as the characters ages and the story becomes more and more "serious". The highest sentiment for the movies, and also overall, are in fourth and sixth movie. It is also here that we have the largest difference between the book and the movies. But why is the sentiment of the movie scripts higher than the sentiment of the books? It could be beacuse the books have to explicitly write the sad words down, which brings the score down, whereas in the movies they can just show the feelings. Looking at the y-axis, it should be noted that the overall difference is small though. 
 
-So are you excited for fourth and sixth year? We are!
+So are you excited for fourth and sixth year or maybe the first year... what shall we belive - the books or the movies? Anyway we just look forward to every year single at Hogwarts (hopefully)!
 
 ### Explainer Notebook and data
 - [Explainer Notebook](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/main/ExplainerNotebookFinal.ipynb).
