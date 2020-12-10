@@ -7,8 +7,6 @@ th {
 }
 </style>
 
-
-
 ## Networks, data and... Harry Potter??
 Were you disappointed when you turned 11 and did not recieve a letter with an owl inviting you to start at Hogwarts School of Witchcraft and Wizardry? If so, you are like us! 
 And if you still want to go to Hogwarts and explore the big universe and meet the characters, you have come to the right place! 
@@ -180,11 +178,11 @@ Well done, all you Harry Potter Fandom authors out there! The sentiment of the F
 
 {% include Character-sentiment-through-movies.html%}
 
-First of all, lets investigate the hig/low diffrences. We see no sentiment observation for Dudley for some of the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
+First of all, lets investigate the high/low differences. We see no sentiment for Dudley for many of the movies, while the Harry Potter has sentiment in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
 
-Alright, lets look at the characters development over time. Overall, most of the characters follow the same sentiment pattern and the difference between them are quite small.  The sentiment patterns of the trio (Harry, Ron and Hermione) are especially similar. Harry actually variate a bit from the other two. An explanation is that he the overall leading role! Harry is in most of the scenes in the movie. In a large proportion of these, Ron and Hermione also appear, but he also appear in many scenes without them. From the plot we might expect a bigger propotion of these in movie four and six, as these differntiate the most. In the last movie, the sentiment is almost the same for the chosen characters, except Neville who has the overall lowest sentiment here. THis seems a bit odd. The same odd observation is for Draco Malfoy in movie four, where he has the highest sentiment. That's wierd right? This could indicate that the characters don't have many lines in this moviess. Again the fewer the words the weaker sentiment analysis.
+Alright, lets look at the characters development over time. Overall, the differences of the characters sentiment are quite small. The sentiment patterns of the trio (Harry, Ron and Hermione) are especially similar. But Harry variate a bit from the other two. An explanation is that he is the overall leading role! Harry is in most of the scenes in the movies. In a large proportion of these, Ron and Hermione also attend, but he also appear in many scenes without them. From the plot we might expect a bigger propotion of these scenes in movie four and six, as these differntiate the most from Ran and Hermione. In the last movie, the sentiment is almost the same for the chosen characters, except Neville who has the overall lowest sentiment here. This seems a bit odd. The same odd observation is for Draco Malfoy in movie four, where he has the highest sentiment, which is also the overall highest. That's weird right? This could indicate that the characters don't have many lines in the given movies. Again the fewer the words the weaker sentiment analysis.
 
-Did you get closer to you new best freinds?? We did!
+Did you get closer to you new friends?? We did!
 
 Feel free to explore the sentiment even more in the interactive plot!
 
@@ -200,4 +198,4 @@ So are you excited for fourth and sixth year or maybe the first year... what sha
 ### Explainer Notebook and data
 - [Explainer Notebook](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/main/ExplainerNotebookFinal.ipynb).
 - [Initial list of character names and links used to import Fandom character pages](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPC.txt)
-- [Cleaned dataset 1](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv), [cleaned dataset 2](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv) and [cleaned dataset 3](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv)
+- [Cleaned dataset 1](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPF-1.csv), [cleaned dataset 2](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPF-2.csv) and [cleaned dataset 3](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPF-3.csv)
