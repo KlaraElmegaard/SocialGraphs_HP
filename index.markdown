@@ -193,7 +193,7 @@ First of all, lets investigate the hig/low diffrence. There isn't a sentiment ob
 Alright lets look at the characters development over time. The sentiment patterns of the trio (Harry, Ron and Hermione) are mostly similar. Could it be different? But Harry actually variate a bit from the other two. An explanation - he is the overall leading role! His 
 
 
-### How does the overall sentiiment of the books and movies develop?
+### How does the overall sentiment of the books and movies develop?
 
 
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
