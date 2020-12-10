@@ -27,10 +27,6 @@ To be able to use our cool network analysis tools, we first need to be able to r
 
 Before we go any further into analyzing the network, take a look at the graph below. If you hover over a node, the character's name and the number of links will appear. The nodes are also colored by their number of links. Can you guess who the bright yellow node represents? Harry Potter, of course, as he is the main character of our universe. Using the toolbar in the top right corner, you can e.g. zoom in and out. Press the little house to reset the illustration. 
 
-{% include Network-of-Harry-Potter-Universe (1).html %}
-
-
-
 ## Looking into some Basic Statistics
 If you look at the plot above again, a lot of the nodes are dark blue, meaning that they have very few links/edges. So a lot of characters have a very low number of edges? We will look further into this by analyzing the degree distribution of the network. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most connected characters, both in regards to in- and out-degrees. 
 
@@ -81,7 +77,6 @@ On the right, we see that pure-bloods, half-bloods and muggle-borns all link mos
 
 Since we mainly saw a separation between the houses, we illustrate this graph where the nodes are colored according to house.
 
-{% include Houses-in-Harry-Potter-fandom-universe.html %}
 
 Overall, we saw a separation between especially the Gryffindor house and the Slytherin house, where each house linked more to its own house than to the other three houses respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuff house, they linked mostly to the Gryffindor house and second most to themselves. It is interesting that they link second must to themselfs and not second most to Slytherin. This shows that Gryffindor is a bigger or more important house than Slytherin. It is also noted that the distance in how much Gryffindor links to Slytherin compared to Ravenclaw and Hufflepuff is not as big as the distance in how much Slytherin links to Gryffindor compared to Ravenclaw and Hufflepuff. I.e. Slytherin do not link very much to Ravenclaw and Hufflepuff compared to Gryffindor. This again underlines that Gryffindor is the house everything centers about, with Slytheren being the second. 
 
@@ -93,7 +88,6 @@ Communities are smaller and locally dense connected subgraphS in a network, wher
 
 Check out how the Louvian algorithm ([check it out here](https://python-louvain.readthedocs.io/en/latest/api.html)), has seperated the graph into networks.
 
-{% include Communities-in-Harry-Potter-fandom-universe.html%}
 
 Many nodes and many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community. Many of them are "undefined" something or characters without a name. Exciting! Can you find any other major characters in this community? Hint: look at the mid-bottom... Here we see the Dursleys.
 
@@ -187,8 +181,6 @@ Nozéa Lestrange is the only character among the 10 happiest and saddest charact
 
 Well done, all your Harry Potter Fandom authors out there! The sentiment of the Fandom pages matches the sentiment of the movies pretty good. The lowest difference is between the two sources is for Harry Potter while the largest difference is for Dudley Dursley. Lets dig even deeper and see a possible reason for this observations. Below a plot of the characters sentiment through the movies is shown. 
 
-{% include Character-sentiment-through-movies.html%}
-
 First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
 Alright lets look at the characters development over time. Overall most of the characters follows the same sentiment pattern and the difference between them are quite small.  The sentiment patterns of the trio (Harry, Ron and Hermione) are mostly similar. Could it be different? But Harry actually variate a bit from the other two. An explanation - he is the overall leading role! Harry is in most of the scenes in the movie. In a large propotion of these Ron and Hermione also attend, but he also attend in many scenes without them. From the plot we expect a bigger propotion of these in movie four and six, as these differntiate the most. The sentiment of all the characters, that we have measurements of the last movie, is almost the smae, besides Neville who have the overall lowest sentiment here, which seems a bit odd. The same odd observation is for Draco Malfoy in movie four, where e has the highest sentiment. That's wierd right? This could indicate that the characters donøt have much lines in this movies, or at least our method does not observe this. Again the fewer the words the weaker sentiment analysis - sadly...
 
@@ -196,8 +188,6 @@ Do you get closer to you new best freinds?? We do!
 Feel free to explore the sentiment even more in the interactive plot!
 
 ### How does the overall sentiment of the books and movies develop?
-
-
 
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
 
