@@ -179,24 +179,27 @@ Nozéa Lestrange is the only character among the 10 happiest and saddest charact
 |Tom Riddle                             |5.3153                   |5.4572        |0.1418|
 |Severus Snape                          |5.4474                   |5.5311        |0.0837|
 
-Well done, all your Harry Potter Fandom authors out there! The sentiment of the Fandom pages matches the sentiment of the movies pretty good. The lowest difference is between the two sources is for Harry Potter while the largest difference is for Dudley Dursley. Lets dig even deeper and see a possible reason for this observations. Below a plot of the characters sentiment through the movies is shown. 
+Well done, all you Harry Potter Fandom authors out there! The sentiment of the Fandom pages matches the sentiment of the movies pretty good. The lowest difference between the two sources is for Harry Potter while the largest difference is for Dudley Dursley. Lets dig even deeper and see a possible reason for this observations. Below a plot of the characters sentiment through the movies is shown. 
 
-First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
-Alright lets look at the characters development over time. Overall most of the characters follows the same sentiment pattern and the difference between them are quite small.  The sentiment patterns of the trio (Harry, Ron and Hermione) are mostly similar. Could it be different? But Harry actually variate a bit from the other two. An explanation - he is the overall leading role! Harry is in most of the scenes in the movie. In a large propotion of these Ron and Hermione also attend, but he also attend in many scenes without them. From the plot we expect a bigger propotion of these in movie four and six, as these differntiate the most. The sentiment of all the characters, that we have measurements of the last movie, is almost the smae, besides Neville who have the overall lowest sentiment here, which seems a bit odd. The same odd observation is for Draco Malfoy in movie four, where e has the highest sentiment. That's wierd right? This could indicate that the characters donøt have much lines in this movies, or at least our method does not observe this. Again the fewer the words the weaker sentiment analysis - sadly...
+XXX KLARA
 
-Do you get closer to you new best freinds?? We do!
+First of all, lets investigate the hig/low diffrences. We see no sentiment observation for Dudley for some of the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
+
+Alright, lets look at the characters development over time. Overall, most of the characters follow the same sentiment pattern and the difference between them are quite small.  The sentiment patterns of the trio (Harry, Ron and Hermione) are especially similar. Harry actually variate a bit from the other two. An explanation is that he the overall leading role! Harry is in most of the scenes in the movie. In a large proportion of these, Ron and Hermione also appear, but he also appear in many scenes without them. From the plot we might expect a bigger propotion of these in movie four and six, as these differntiate the most. In the last movie, the sentiment is almost the same for the chosen characters, except Neville who has the overall lowest sentiment here. THis seems a bit odd. The same odd observation is for Draco Malfoy in movie four, where he has the highest sentiment. That's wierd right? This could indicate that the characters don't have many lines in this moviess. Again the fewer the words the weaker sentiment analysis.
+
+Did you get closer to you new best freinds?? We did!
 
 Feel free to explore the sentiment even more in the interactive plot!
 
 ### How does the overall sentiment of the books and movies develop?
 
-We have now explored the sentiment of each character, but do you really want to go to Hogwarts if all the overall sentiment is just sad... Ok, we don't actuallty think is is so. But let look at the sentment through the books and movies and compare them to each other. Below the overall sentiment of the each book and movie is plotted, besides the fifth and last part of the seventh movie, as we do not have the data for these. Lets find out which of the seven years on Hogwarts we shall really look forward to, when we finally get our letters! 
+Now, we have explored the sentiment of each character, but do you really want to go to Hogwarts if all the overall sentiment is sad (XXX er det overall sad KLARA? ... Ok, we don't actuallty think it is. But lets look at the sentment throughout the books and movies and compare them to each other. Below, the overall sentiment of each book and movie is plotted (except the fifth book and last part of the seventh movie, as data quality for these were not good enough). Lets find out which of the seven years on Hogwarts we shall really look forward to, when we finally get our letters! 
 
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
 
-Overall movies are "more happy" than the books, but they follows the same pattern. The highest sentiment is in fourth and sixth movie. It is allso here that we have the largest difference between the book and the movies. But why is the sentiment of the movie scripts higher than the sentiment of the books, one may ask. It could be that in the books they have to explicitly write the sad words down, which brings the score down, whereas in the movies they can just show the feelings. Looking at the y-axis, it should be noted that the overall difference is small though.
+Overall, movies are "more happy" than the books, but they follow the same pattern. The highest sentiment is in fourth and sixth movie. It is also here that we have the largest difference between the book and the movies. But why is the sentiment of the movie scripts higher than the sentiment of the books? It could be beacuse the books have to explicitly write the sad words down, which brings the score down, whereas in the movies they can just show the feelings. Looking at the y-axis, it should be noted that the overall difference is small though.
 
-So are you excited for fourth and sixth year - We are!
+So are you excited for fourth and sixth year? We are!
 
 ### Explainer Notebook and data
 - [Explainer Notebook](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/main/ExplainerNotebookFinal.ipynb).
