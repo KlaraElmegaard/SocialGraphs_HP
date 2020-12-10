@@ -75,6 +75,7 @@ On the right, we see that pure-bloods, half-bloods and muggle-borns all link mos
 
 Since we mainly saw a separation between the houses, we illustrate this graph where the nodes are colored according to house.
 
+{% include Houses-in-Harry-Potter-fandom-universe.html %}
 
 Overall, we saw a separation between especially the Gryffindor house and the Slytherin house, where each house linked more to its own house than to the other three houses respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuff house, they linked mostly to the Gryffindor house and second most to themselves. It is interesting that they link second must to themselfs and not second most to Slytherin. This shows that Gryffindor is a bigger or more important house than Slytherin. It is also noted that the distance in how much Gryffindor links to Slytherin compared to Ravenclaw and Hufflepuff is not as big as the distance in how much Slytherin links to Gryffindor compared to Ravenclaw and Hufflepuff. I.e. Slytherin do not link very much to Ravenclaw and Hufflepuff compared to Gryffindor. This again underlines that Gryffindor is the house everything centers about, with Slytheren being the second. 
 
@@ -86,6 +87,7 @@ Communities are smaller and locally dense connected subgraphS in a network, wher
 
 Check out how the Louvian algorithm ([check it out here](https://python-louvain.readthedocs.io/en/latest/api.html)), has seperated the graph into networks.
 
+{% include Communities-in-Harry-Potter-fandom-universe.html%}
 
 Many nodes and many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community. Many of them are "undefined" something or characters without a name. Exciting! Can you find any other major characters in this community? Hint: look at the mid-bottom... Here we see the Dursleys.
 
