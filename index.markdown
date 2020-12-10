@@ -91,19 +91,19 @@ Overall we saw a seperation between especially the Griffendor house and the Slyt
 ## Communities between the characters - are all characters connected as we believe?
 *"You're not going mad or anything. I can see them too." - Luna Lovegood*
 
-Communities are smaller locally dense connected subgraph in a network, where the nodes are more likely to connect to other nodes in the same community [1](http://networksciencebook.com/chapter/9#basics). Of course the network of all characters in the Harry Potter universe forms such communities! Some are obvious, but is there communites that we did not know about? Are some enimies more connected than friends, alliances or even family? Let's find out!
+Communities are smaller and locally dense connected subgraph in a network, where the nodes are more likely to connect to other nodes in the same community [1](http://networksciencebook.com/chapter/9#basics). The network of all characters in the Harry Potter universe forms such communities! Some are obvious, but is there communites that we did not know about? Are some enimies more connected than friends, alliances or even family? Let's find out!
 
 Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/latest/api.html), has seperated the graph into networks.
 
 {% include Communities-in-Harry-Potter-fandom-universe.html%}
 
-Many nodes, many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community, many of them are "undefined" or characters without a name, exciting! Can you find any other major characters in this community? Hint, look at the mid-bottom... Maybe the Dursleys.
+Many nodes and many edges, but funny to surf around! Can you find Harry Potter now? If not, then look at community 11. Explore some of the characters in his community. Many of them are "undefined" something or characters without a name, exciting! Can you find any other major characters in this community? Hint, look at the mid-bottom... Maybe the Dursleys.
 
 Let's dig a bit deeper into these communities, and the distributions of characters in each community.
 
 <img src="images/com_dist.png" alt="hi" class="inline"/>
 
-So the size of the communities variate a lot, but would it be meaningful to look at all of these. Let take a look at the first five characters of a small network and and large.
+So the size of the communities variate a lot, but would it be meaningful to look at all of these. Let take a look at the first five characters of a small network and of large network.
 
 | Community 16 | Community 1 | 
 | ----------------------- | ----------------------- |
@@ -113,7 +113,7 @@ So the size of the communities variate a lot, but would it be meaningful to look
 |Devlin Whitehorn| Phineas Black|
 |Derwent Shimpling| Sirius Black|
 
-So just by looking at the first five characters a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only containing minor characters. That's why we look at the largest communities, so that we actually see some character that we know. Lets take a look at the 6 most connected characters in the 11 communities that contains more than 100 characters. These characters would be the ones, describing the features of the community the best.
+Just by looking at the first five characters, a pattern is shown: The large community contains the major characters (here Bartemius Crouch Junior and Sirius Black) and the small community only contains minor characters. That's why we look at the largest communities, so that we actually see some character that we know. Lets take a look at the 6 most connected characters in the 11 communities that contains more than 100 characters. These characters would be the ones, describing the features of the community the best.
 
 | Community 1 | Community 2 | Community 3 |Community 4 |Community 5 |Community 7 |Community 8 |Community 9 |Community 10 |Community 11 |Community 18 |
 | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
@@ -124,35 +124,36 @@ So just by looking at the first five characters a pattern is shown: The large co
 |Lucius Malfoy|Remus Lupin|Aberforth Dumbledore|Daniel Page|Walden Macnair|Porpentina Goldstein|Neville Longbottom|Barnaby Lee|Xenophilius Lovegood|Hedwig|Marcus Belby|
 |Phineas Nigellus Black|Ginevra Weasley|Beedle the Bard|Fay Dunbar|Amelia Bones|Jacob Kowalski|Cedric Diggory|Rowan Khanna|Travers|Arabella Figg|Walter Parkin|
 
-You donøt have to be an Harry Potter expert to see that many of these communities are well-defined. Just look at community 2. This is the big "Weasley community" containing, at least all the most prominent characters of the Weasley familiy. This surname or familiy pattern are actually a pattern presented in many of these community. Another element that connects the community is places or occupation. Community 8 is clearly a "Hogwarts" network, containing many of the important characters attending or working on Hogwarts. A last pattern, among many others that can be explored in the graph, we want to point out is that the universe part series also have takes a part in the community seperation. Look at community 7, mostly containing characters from the "Fantastic beasts and where to find them" movies series. The "house" and "blood-type" patterns, are not directly showed in these large communities, which indicates that e.g. the factors described in this sections, have a stronger impact on the relationships between the characters.
+You don't have to be an Harry Potter expert to see that many of these communities are well-defined. Look at community 2 as an example. This is the big "Weasley community" containing, at least, all the most prominent characters of the Weasley familiy. This surname or familiy pattern is actually a pattern presented in many of these communities. Another element that connects some of the communities is places or occupation. Community 8 is clearly a "Hogwarts" network, containing many of the important characters attending or working on Hogwarts. A last pattern, among many others that can be explored in the graph, we want to point out is that some of the universe's other series also takes a part in the community seperation. E.g. look at community 7. Here most characters are from the "Fantastic beasts and where to find them" movies series. The "house" and "blood-type" patterns, are not directly showed in these large communities, indicating that e.g. the factors described in this sections, have a stronger impact on the relationships between the characters than the houses and the blood types.
 
 Feel free to further explore the communities in the graph!
 
 ## Comparing language in books, movies and on characters pages 
 *"Because that's what Hermione does,' said Ron, shrugging. 'When in doubt, go to the library."*
 
-We have now looked into the connections between our new friendships, when we in the hopefully soon get our letter from Hogwats (in an age of way to much) and we are ready to meet them all, good as bad, Bellatrix Lestrange as Neville Longbottom! So now we go to the "library" with Hermione Granger herself and look all thw written material we can find - we are ready for the natural language processing! For this part the character pages of the Fandom wiki, the books and the manuscripts for the movies (besides movie 5) will be analyzed.
+We have now looked into the connections between our upcoming friendships, when we hopefully soon get our letter from Hogwats (in an age of way to much). We are ready to meet them all, good as bad, Bellatrix Lestrange as Neville Longbottom! Now we go to the "library" with Hermione Granger herself and look through all the written material we can find - we are ready for the natural language processing! Here the characters' (Fandom) wiki-pages, the books and the scripts for the movies (besides movie 5) will be analyzed.
 
 ### Is the terminology of pages, book and movies compareable?
 
-The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds gives a quick overview of which words that apears at most in a given text. The wordclouds for the combined text of all character pages, books and movies are showed below respectively.
+The terminology of wrttien material can roughly be interpreted with wordclouds. Wordclouds give a quick overview of which words appears the most in a given text. The wordclouds for the combined text of all characters' pages, books and movies are showed below, respectively. Any guesses on promonent words?
 
 <img src="images/wordcluds.png" alt="hi" class="inline"/>
 
-You've? Of guessed it! Of course "harry" and "potter" are two of the most common. 
+You guessed correctly! Of course "harry" and "potter" are two of the most common words. 
 
-Actually many of the words are meaningful in the different wordsclouds and it is almost clearly to see which wordcloud that reflects each of the sources (also withour thee titles). While the wordcloud for the character pages showing many words that are connected to magic, the characters and the universe overall, the two other wordclouds also showing a lot of verbs, related to what the characters/actors do. 
+Actually many of the words are meaningful in the different wordsclouds and it is clear which wordcloud that reflects each of the sources (also without the titles). While the wordcloud over the characters' wiki-pages show many words that are connected to magic, the characters and the universe overall, the two other wordclouds also show a lot of verbs, indicating what the characters/actors do - illustrating that it is fiction.
 
-### Sentiment of the characters - is the evil guys really the saddest?
+### Sentiment of the characters - are the evil guys really the saddest?
 
-We all know that the different characters of the Harry Potter universe have a lot of different personalities and just by reading their speech in the books or hearing their lines in the movies, we get an intuition about the this personality. With sentiment analysis, we can explore this! And questions like "is dobby actual as happy as we believe or are other characters happier?" can be answered!
-In this section a sentiment analyzis is performed to compare the sentiment of all characters of the Fandom Wiki. Afterwards the sentiment of the Fandom pages of some of the main characters, will be compared to the sentiment of the same characters given by the lines in the movies. Furthermore the sentiment development of these characters through the movies will be explored and the sentiment of the movires and books will be compared.
+We all know that the different characters of the Harry Potter universe have a lot of different personalities and just by reading their lines in the books or hearing their lines in the movies, we get an intuition about thier personalities. With sentiment analysis, we can explore this! And questions like "is Dobby actual as happy as we believe or are other characters happier?" and "is Snape really that mean/sad?" can be answered!
 
-A sentiment analyze is performed to happiness rank a text, due to the words that is used. The happpiness ranking of words are defined in the [LabMT](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752). The distribution of sentiment are plotted below. 
+In this section a sentiment analyzis is performed to compare the sentiment of all characters in the Fandom Wiki. Afterwards the sentiment of the Fandom pages of some of the main characters will be compared to the sentiment of the same characters' lines in the movies. Furthermore the sentiment development of these characters through the movies will be explored and the sentiment of the movies and books will be compared.
+
+A sentiment analyze is performed to rank a text on a sad/happy score, based to the words that is used. The happpiness ranking of words are defined in the [LabMT](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752). The distribution of sentiments are plotted below. 
 
 <img src="images/HistPS.png" alt="hi" class="inline"/>
 
-Yes it is a bit disappointing, that the span between the happiest and saddest characters is so small. Is the Death Eaters actual not as bad as we assume? But nothing are as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the Wiki texts are supposed to be written in a natural language. However it could be fun to see which characters we should meet with the happy face and which we should meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
+Yes, it is a bit disappointing that the span between the happiest and saddest characters is so small. Is the Death Eaters actual not as bad as we assume? But nothing are as bad as it looks like! The histogram almost reflects a normal distribution (a bit skewed to the right), which we actually expected since the Wiki texts are supposed to be written in a natural language. However, it could be fun to see which characters we will meet with a happy face and which we will meet with a gloomy mind, ready to cast one of the Unforgivable Curses. Thus the 10 happpiest and saddest characters are found.
 
 | Happiest characters| Saddest characters | 
 | ----------------------- | ----------------------- |
@@ -167,11 +168,10 @@ Yes it is a bit disappointing, that the span between the happiest and saddest ch
 |Unidentified 2000s Hogwarts student's parents| Unidentified wizard killed at the Quad battlements|
 |Falco Tremblay|Poppy Pomfrey's Death Eater Opponent|
  
-Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, thet are nor popular. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. And with words as "christmas" (average happiness 7.96), "mother" (average happiness 7.68) and "dinner" (average happiness 7.4), this is almost meant to one of the most happy characters!
+Of course the Death Eaters are the saddest characters! And even the undefined ones, that has been either knocked out or killed... OR ARE BALD! It is a sad life - even their "names" indicates that. The happpiest character, on the other hand, are nor popular/well known. Let's take a look at the character page for the happiest character of them all [Constance Pickering's sister](https://harrypotter.fandom.com/wiki/Constance_Pickering%27s_sister). This site is short, making the good words count a lot. And with words as "christmas" (average happiness 7.96), "mother" (average happiness 7.68) and "dinner" (average happiness 7.4), this is almost meant to one of the most happy characters!
 
 ### But what about the main characters?
-
-The only character among the 10 happiest and saddest characters that we con put in a little connection to some major characters, that we know, is Nozéa Lestrange, only becoouse of the suranme Lestrange. But other than that this Nozéa, only pplays a minor role in the series. So our analysis of the most happy and sad characters is a bit boring for the greater audience, which do not give a sh..., about an undefined Death Eater or someones sister. Therefore an insight of the sentiment of some of the main characters are given. The sentiment of 11 of the most prominent characters Fandom pages are in the below table compared to the average sentiment of their lines in the movies. 
+The only character among the 10 happiest and saddest characters that we can put in a little connection to some major characters that we know, is Nozéa Lestrange - only because of the suranme Lestrange. The other characters only play a minor role in the series. So our above analysis of the most happy and sad characters is a bit boring for the greater audience, which do not give a sh.. about an undefined Death Eater or someones sister. Therefore an insight of the sentiment of some of the main characters are given. The sentiment of 11 of the most prominent characters' Fandom pages are in the below table compared to the average sentiment of their lines in the movies. 
 
 | Character | Fandom sentiment | Movie sentiment| 
 | ----------------------- | ----------- |----------- |
@@ -187,9 +187,16 @@ The only character among the 10 happiest and saddest characters that we con put 
 |Tom Riddle (Voldemort)| 5.457|5.315|
 |Severus Snape| 5.531| 5.447|
 
+XXX mangler 
+
 {% include Character-sentiment-through-movies.html%}
 
-### And how does the overall sentiiment of the books and movies develop?
+XXX mangler
+
+
+### How does the overall sentiiment of the books and movies develop?
+
+XXX mangler
 
 
 ### Explainer Notebook and data
