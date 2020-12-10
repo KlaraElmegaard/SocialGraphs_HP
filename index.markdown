@@ -7,20 +7,29 @@ th {
 }
 </style>
 
-## Networks, data and... Harry Potter??
 
+
+## Networks, data and... Harry Potter??
 Were you disappointed when you turned 11 and did not recieve a letter from an owl inviting you to start at Hogwarts, School of Witchcraft and Wizardry? If so, you are like us! 
 And if you still want to go to Hogwarts and explore the big universe and meet the characters, you have come to the right place! 
 
 Through network thoery we will analyse the known and unknown relationships between the fantastic and wonderful characters that appear in the universe. Maybe we will discover connections between bloodtype (muggles, pure-blood e.g.) and the four houses of Hogwarts. With natural language processing, the language of the character pages, the books and scripts of the movies will be analysed through sentiment analysis and wordclouds.
 
+
+
 ## Data
 Where can we get enough information to greate and explore the universe of characters? Lucky for us, a huge [Fandom Wiki](https://harrypotter.fandom.com/wiki/Main_Page) exists for the Harry Potter Universe. We used this to download the wikipedia pages for all the characters. From each wiki-page we used regular expression to get all the links but also to gather informations such af house, blood and gender. Since the language on wiki-pages are (supposed to be) fairly neutral, we also use text analysis to analyse the [books](http://glozman.com/textpages.html) and the [movie scripts](https://github.com/asmitakulkarni/QuoteGenerator/tree/master/harrypotterscripts). Regarding the movie scrips, the sentiment of some of the main characters will be considered over time.
 
+
+
 ## Interactions Between Characters - The Harry Potter Universe as a Graph
-To be able to use our cool netowrk analysis tools, we first need to be able to represent the characters in a graph with nodes and edges. Each character will have a node. There will be an edge from lets say Harry Potter to Hermione, if Harry Potter's wiki-page links to Hermione's. Doing this, we got a graph consisting of 3,930 nodes and 14,916 edges. Extracting the giant connected componant, the graph ended up with 2,643 nodes and 14,525 edges. Before we go any further into analysing the network, take a look at the graph below. If you hover over a node, the character's name and the number of links will appear. The nodes are also colored by their number of links. Can you guess who the bright yellow node represent? Harry Potter, of cause, being the main character of our universe. Using the toolbar in the topright, you can e.g. zoom in and out. Press the little house to reset the illustrateion. 
+To be able to use our cool netowrk analysis tools, we first need to be able to represent the characters in a graph with nodes and edges. Each character will have a node. There will be an edge from lets say Harry Potter to Hermione, if Harry Potter's wiki-page links to Hermione's. Doing this, we got a graph consisting of 3,930 nodes and 14,916 edges. Extracting the giant connected componant, the graph ended up with 2,643 nodes and 14,525 edges. 
+
+Before we go any further into analysing the network, take a look at the graph below. If you hover over a node, the character's name and the number of links will appear. The nodes are also colored by their number of links. Can you guess who the bright yellow node represent? Harry Potter, of cause, being the main character of our universe. Using the toolbar in the topright, you can e.g. zoom in and out. Press the little house to reset the illustrateion. 
 
 {% include file.html %}
+
+
 
 ## Looking into some Basic Statistics
 If you again look at the above plot, a lot of the nodes are dark blue meaning that they have very few links/edges. So a lot of characters has a very low number of edges? We sill look further into this by analyzing the networks degree distribution. We will do this twice, both for the in-degrees and for the out-degrees. To get an idea of our network, we first take a look at the five most connected characters, both in regards to in- and out-degrees. 
@@ -46,7 +55,7 @@ If we next consider the counts from the above histograms on a log-log scale, we 
 
 
 
-## Is their a seperation of the houses or maybe the blood-types in out network?
+## Is their a seperation of the houses or maybe the blood-types in our network?
 *“Not Slytherin, eh?” said the small voice. “Are you sure? You could be great, you know, it’s all here in your head, and Slytherin will help you on the way to greatness, no doubt about that — no? Well, if you’re sure — better be GRYFFINDOR!” - Harry Potter and the sorting hat*
 
 So now that we have a better understandig of out netowrk, we will begin to look for patterns in the network. 
@@ -64,19 +73,19 @@ We create one subgraph consisting only of characters from the four houses and on
 | hufflepuff: | 97 | | pure-blood: | 363 |
 | gryffindor: |	155 | | muggle-born: | 23 |
 
-Summin to 510 characters in the House-graph and 654 in the Blood-graph. Since we have $4^4=16$ different possible combinations, we consider the links in a heatmap
+In total we have 510 characters in the House-graph and 654 in the Blood-graph. Since we have $4^4=16$ different possible combinations, we consider the links in a heatmap
 
 <img src="images/heat_houses_blood.png" alt="hi" class="inline"/>
 
-On the left, we see that Griffendor characters link most to characters from their own house. The same is the case for the Slytherin house. But characters from both Rawenclaw and Hufflepuff links mostly to characters in Gryffendor. An axplanation could be that Gryffendor and SLytherun is both big/importent houses with importing characters whereas Ravenclaw and Hufflepuff mostly consists of smaller/less importent characters - thus not characters that are linked to.
+On the left, we see that characters from Griffendor link most to characters from their own house. The same is the case for the Slytherin house. But characters from both Rawenclaw and Hufflepuff link mostly to characters in Gryffendor. An axplanation could be that Gryffendor and SLytherun is both big/importent houses with importing characters whereas Ravenclaw and Hufflepuff mostly consists of smaller/less importent characters - thus not characters that are linked very much to.
 
-On the right, we see that pure-bloods, half-bloods and muggle-borns all link most to pure-blood where non-magic people link mostly to other non-magic people. All four group links the second most til half-bloods. In generel not many characters link to non-magic people and muggle-born. All in all, we do not see as pronounced differences for the blood as for the houses. We see that half-bloods, muggle-borns and pure-bloods link mostly to pure-bloods. All three also links the second most to half-bloods. On the other hans non-magic people links mostly to non-magic people ad second most to half-bloods. Thus we might see a seperation between non-magic people and magic people in general. This makes sense, since we also in the book see a clear seperation of the non-magic people and the magic people. Thus even though the generel purpose for the evil guy (Voldemort) is to seperate pure-bloods and muggle-born (partly also half-bloods), we do not see this deference in the wikipages of the characters.
+On the right, we see that pure-bloods, half-bloods and muggle-borns all link most to pure-bloods where non-magic people link mostly to other non-magic people. All four groups link the second most til half-bloods. In generel not many characters link to non-magic people and muggle-born. On the other hand non-magic people link mostly to non-magic people and second most to half-bloods. Thus we might see a seperation between non-magic people and magic people in general. This makes sense, since we also in the book see a clear seperation of the non-magic people and the magic people. Thus even though the generel purpose for the evil guy (Voldemort) is to seperate pure-bloods and muggle-born (partly also half-bloods), we do not see this difference in the characters' wikipages. In general, we do not see as pronounced differences for the links with regards to blood as for the houses.
 
 Since we mostly saw a seperation between the houses, we illustrate this graph where the nodes are colored per house.
 
 {% include Houses-in-Harry-Potter-fandom-universe.html %}
 
-All in all we saw a seperation between especially the Griffendor house and the Slytherin house, where each house linked more to its own house than to the other three houses respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuf house, they linked mostly to the Griffendor house and second most to them selves. It is interesting that they link second must to them selfs and not second most to Slytherin. This shows that Griffendor is a bigger or more importens house than Slytherin. It is also noted that the distance in how much Griffendor links to Slytherin compared to Ravenclaw and Hufflepuf is not at big as the distance in how much Slytherin links to Griffendor compared to Ravenclaw and Hufflepuf. Meaning that Slytherin do not link very much to Ravenclaw and Hufflepuf compared to Griffendor. This again underlines that Griffendor is the house everything centers about with Slytheren being the second biggest. 
+Overall we saw a seperation between especially the Griffendor house and the Slytherin house, as each house linked more to its own house than to the other three houses, respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuf house, they linked mostly to the Griffendor house and second most to themselves. It is interesting that they link second must to them selfs and not second most to Slytherin. This shows that Griffendor is a bigger or more importens house than Slytherin. It is also noted that the distance in how much Griffendor links to Slytherin compared to Ravenclaw and Hufflepuf is not at big as the distance in how much Slytherin links to Griffendor compared to Ravenclaw and Hufflepuf. Meaning that Slytherin do not link very much to Ravenclaw and Hufflepuf compared to Griffendor. This again underlines that Griffendor is the house everything centers about with Slytheren being the second biggest. 
 
 
 ## Communities between the characters - are all characters connected as we believe?
