@@ -79,7 +79,6 @@ Since we mainly saw a separation between the houses, we illustrate this graph wh
 
 Overall, we saw a separation between especially the Gryffindor house and the Slytherin house, where each house linked more to its own house than to the other three houses respectively. They also linked second most to each other. If we consider the Ravenclaw and the Hufflepuff house, they linked mostly to the Gryffindor house and second most to themselves. It is interesting that they link second must to themselfs and not second most to Slytherin. This shows that Gryffindor is a bigger or more important house than Slytherin. It is also noted that the distance in how much Gryffindor links to Slytherin compared to Ravenclaw and Hufflepuff is not as big as the distance in how much Slytherin links to Gryffindor compared to Ravenclaw and Hufflepuff. I.e. Slytherin do not link very much to Ravenclaw and Hufflepuff compared to Gryffindor. This again underlines that Gryffindor is the house everything centers about, with Slytheren being the second. 
 
-
 ## Communities between the characters - are all characters connected as we believe?
 *"You're not going mad or anything. I can see them too." - Luna Lovegood*
 
@@ -126,7 +125,6 @@ Feel free to further explore the communities in the graph!
 We have now looked into the connections between our upcoming friendships for when we hopefully get our letter from Hogwarts soon (in an age of way too much). We are ready to meet them all, good as bad, Bellatrix Lestrange as well as Neville Longbottom! Now we go to the "library" with Hermione Granger herself and look through all the written material we can find; we are ready for the natural language processing! Here the characters' (Fandom) wiki pages, the books and the scripts for the movies (except movie 5) will be analyzed.
 
 ### Are the terminologies of pages, books and movies comparable?
-
 The terminology of written material can roughly be interpreted with wordclouds. Wordclouds give a quick overview of which words appear the most in a given text. The wordclouds for the combined text of all characters' pages, books and movies are showed below. Any guesses on prominent words?
 
 <img src="images/wordclouds.png" alt="hi" class="inline"/>
@@ -136,7 +134,6 @@ You guessed correctly! Of course "harry" and "potter" are two of the most common
 Actually, many of the words are meaningful in the different wordclouds and it is clear which wordcloud reflects each of the sources (also without the titles). The wordcloud for the characters' wiki pages show many words connected to magic, the characters and the universe overall. The wordclouds for the books and the movies also include a lot of verbs, indicating what the characters/actors do - illustrating that these are narratives and not just statements of facts.
 
 ### Sentiment of the characters - are the evil guys really the saddest?
-
 We all know that the different characters of the Harry Potter universe have a lot of different personalities and just by reading their lines in the books or hearing their lines in the movies, we get a sense of their personalities. With sentiment analysis, we can explore this! And questions like "is Dobby actually as happy as we believe or are other characters happier?" and "is Snape really that mean/sad?" can be answered!
 
 In this section, a sentiment analysis is performed to compare the sentiment of all characters in the Fandom Wiki. Afterwards, the sentiment of the Fandom pages of some of the main characters will be compared to the sentiment of the same characters' lines in the movies. Furthermore, the sentiment development of these characters through the movies will be explored and the sentiment of the movies and books will be compared.
@@ -192,7 +189,6 @@ Did you get closer to you new best freinds?? We did!
 Feel free to explore the sentiment even more in the interactive plot!
 
 ### How does the overall sentiment of the books and movies develop?
-
 Now, we have explored the sentiment of each character, but do you really want to go to Hogwarts if if the sentement analysis shows is just low through the whole series? Ok, we don't actuallty think it is. But lets look at the sentiment throughout the books and movies and compare them to each other. Below, the overall sentiment of each book and movie is plotted (except the fifth book and last part of the seventh movie, as data quality for these were not good enough). Lets find out which of the seven years on Hogwarts we shall really look forward to, when we finally get our letters! 
 
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
