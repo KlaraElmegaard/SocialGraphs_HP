@@ -189,11 +189,14 @@ Well done, all your Harry Potter Fandom authors out there! The sentiment of the 
 
 {% include Character-sentiment-through-movies.html%}
 
-First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - the lower the word the lower the sentiment. 
-Alright lets look at the characters development over time. The sentiment patterns of the trio (Harry, Ron and Hermione) are mostly similar. Could it be different? But Harry actually variate a bit from the other two. An explanation - he is the overall leading role! His 
+First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
+Alright lets look at the characters development over time. Overall most of the characters follows the same sentiment pattern and the difference between them are quite small.  The sentiment patterns of the trio (Harry, Ron and Hermione) are mostly similar. Could it be different? But Harry actually variate a bit from the other two. An explanation - he is the overall leading role! Harry is in most of the scenes in the movie. In a large propotion of these Ron and Hermione also attend, but he also attend in many scenes without them. From the plot we expect a bigger propotion of these in movie four and six, as these differntiate the most. The sentiment of all the characters, that we have measurements of the last movie, is almost the smae, besides Neville who have the overall lowest sentiment here, which seems a bit odd. The same odd observation is for Draco Malfoy in movie four, where e has the highest sentiment. That's wierd right? This could indicate that the characters donøt have much lines in this movies, or at least our method does not observe this. Again the fewer the words the weaker sentiment analysis - sadly...
 
+Do you get closer to you new best freinds?? We do! 
+Feel free to explore the sentiment even more in the interactive plot!
 
 ### How does the overall sentiment of the books and movies develop?
+
 
 
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
