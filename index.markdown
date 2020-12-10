@@ -191,9 +191,9 @@ Now, we have explored the sentiment of each character, but do you really want to
 
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
 
-Overall, movies are "more happy" than the books, but they follow the same pattern. Book one has the highest sentiment overall for the books. An explanation is that books develop over time as the characters ages and the story becomes more and more "serious". The highest sentiment for the movies, and also overall, are in fourth and sixth movie. It is also here that we have the largest difference between the book and the movies. But why is the sentiment of the movie scripts higher than the sentiment of the books? It could be beacuse the books have to explicitly write the sad words down, which brings the score down, whereas in the movies they can just show the feelings. Looking at the y-axis, it should be noted that the overall difference is small though. 
+Overall, movies are "more happy" than the books, but they follow the same pattern. Book one has the highest sentiment overall for the books. An explanation is that books develop over time as the characters ages and the story becomes more and more "adultish" and "serious". The highest sentiment for the movies, and also overall, are in fourth and sixth movie. It is also here that we have the largest difference between the book and the movies. But why is the sentiment of the movie scripts higher than the sentiment of the books? It could be beacuse the books have to explicitly write the sad words down, which brings the score down, whereas in the movies they can just show the feelings. Looking at the y-axis, it should be noted that the overall difference is small though. 
 
-So are you excited for fourth and sixth year or maybe the first year... what shall we belive - the books or the movies? Anyway we just look forward to every year single at Hogwarts (hopefully)!
+So are you excited for fourth and sixth year or maybe the first year... what shall we believe - the books or the movies? Anyway we just look forward to every year single at Hogwarts (hopefully)!
 
 ### Explainer Notebook and data
 - [Explainer Notebook](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/main/ExplainerNotebookFinal.ipynb).
