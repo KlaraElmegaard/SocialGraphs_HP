@@ -27,7 +27,7 @@ To be able to use our cool network analysis tools, we first need to be able to r
 
 Before we go any further into analyzing the network, take a look at the graph below. If you hover over a node, the character's name and the number of links will appear. The nodes are also colored by their number of links. Can you guess who the bright yellow node represents? Harry Potter, of course, as he is the main character of our universe. Using the toolbar in the top right corner, you can e.g. zoom in and out. Press the little house to reset the illustration. 
 
-{% include file.html %}
+{% include Network-of-Harry-Potter-Universe (1).html %}
 
 
 
@@ -52,8 +52,6 @@ To get a better overview, we plot the degree distribution in the two histograms 
 Next, we consider the counts from the histograms above on a log-log scale. We are able to identify that both the in- and the out degree distribution resemble that of a scale free network more than that of a random network. To get a more thorough and technical explanation of this, please visit the explainer notebook (link in the bottom). 
 
 <img src="images/llinoutdegree.png" alt="hi" class="inline"/>
-
-
 
 ## Is there a separation into houses or maybe blood status in our network?
 *“Not Slytherin, eh?” said the small voice. “Are you sure? You could be great, you know, it’s all here in your head, and Slytherin will help you on the way to greatness, no doubt about that — no? Well, if you’re sure — better be GRYFFINDOR!” - Harry Potter and the sorting hat*
@@ -91,9 +89,9 @@ Overall, we saw a separation between especially the Gryffindor house and the Sly
 ## Communities between the characters - are all characters connected as we believe?
 *"You're not going mad or anything. I can see them too." - Luna Lovegood*
 
-Communities are smaller and locally dense connected subgraphS in a network, where the nodes are more likely to connect to other nodes in the same community [1](http://networksciencebook.com/chapter/9#basics). Such communities appear in the network of all the characters in the Harry Potter universe! Some are obvious, but are there communities that we did not know about? Are some enemies more connected than friends, alliances or even family? Let's find out!
+Communities are smaller and locally dense connected subgraphS in a network, where the nodes are more likely to connect to other nodes in the same community ([description here](http://networksciencebook.com/chapter/9#basics)). Such communities appear in the network of all the characters in the Harry Potter universe! Some are obvious, but are there communities that we did not know about? Are some enemies more connected than friends, alliances or even family? Let's find out!
 
-Check out how the Louvian algorithm[2](https://python-louvain.readthedocs.io/en/latest/api.html), has seperated the graph into networks.
+Check out how the Louvian algorithm ([check it out here](https://python-louvain.readthedocs.io/en/latest/api.html)), has seperated the graph into networks.
 
 {% include Communities-in-Harry-Potter-fandom-universe.html%}
 
@@ -137,7 +135,7 @@ We have now looked into the connections between our upcoming friendships for whe
 
 The terminology of written material can roughly be interpreted with wordclouds. Wordclouds give a quick overview of which words appear the most in a given text. The wordclouds for the combined text of all characters' pages, books and movies are showed below. Any guesses on prominent words?
 
-<img src="images/wordcluds.png" alt="hi" class="inline"/>
+<img src="images/wordclouds.png" alt="hi" class="inline"/>
 
 You guessed correctly! Of course "harry" and "potter" are two of the most common words. 
 
@@ -197,7 +195,8 @@ Alright lets look at the characters development over time. The sentiment pattern
 
 ### How does the overall sentiiment of the books and movies develop?
 
-XXX mangler
+
+<img src="images/PS_BM.png" alt="hi" class="inline"/>
 
 
 ### Explainer Notebook and data
