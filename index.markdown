@@ -10,7 +10,7 @@ th {
 
 
 ## Networks, data and... Harry Potter??
-Were you disappointed when you turned 11 and did not recieve a letter from an owl inviting you to start at Hogwarts School of Witchcraft and Wizardry? If so, you are like us! 
+Were you disappointed when you turned 11 and did not recieve a letter with an owl inviting you to start at Hogwarts School of Witchcraft and Wizardry? If so, you are like us! 
 And if you still want to go to Hogwarts and explore the big universe and meet the characters, you have come to the right place! 
 
 Through network theory we will analyze the known and unknown relationships between the fantastic and wonderful characters who appear in the universe. Maybe we will discover connections between blood status (muggles, pure-blood e.g.) and the four houses of Hogwarts. Using natural language processing, we will analyze the language of the character pages, the books and scripts of the movies through sentiment analysis and wordclouds.
@@ -184,15 +184,21 @@ Well done, all your Harry Potter Fandom authors out there! The sentiment of the 
 First of all, lets investigate the hig/low diffrence. There isn't a sentiment observations for Dudley for all the movies, while the sentiment of Harry Potter is observed in all movies. This is a pretty good reason for the sentiment difference - few words makes the sentiment approximation weaker! 
 Alright lets look at the characters development over time. Overall most of the characters follows the same sentiment pattern and the difference between them are quite small.  The sentiment patterns of the trio (Harry, Ron and Hermione) are mostly similar. Could it be different? But Harry actually variate a bit from the other two. An explanation - he is the overall leading role! Harry is in most of the scenes in the movie. In a large propotion of these Ron and Hermione also attend, but he also attend in many scenes without them. From the plot we expect a bigger propotion of these in movie four and six, as these differntiate the most. The sentiment of all the characters, that we have measurements of the last movie, is almost the smae, besides Neville who have the overall lowest sentiment here, which seems a bit odd. The same odd observation is for Draco Malfoy in movie four, where e has the highest sentiment. That's wierd right? This could indicate that the characters donøt have much lines in this movies, or at least our method does not observe this. Again the fewer the words the weaker sentiment analysis - sadly...
 
-Do you get closer to you new best freinds?? We do! 
+Do you get closer to you new best freinds?? We do!
+
 Feel free to explore the sentiment even more in the interactive plot!
 
 ### How does the overall sentiment of the books and movies develop?
 
+We have now explored the sentiment of each character, but do you really want to go to Hogwarts if all the overall sentiment is just sad... Ok, we don't actuallty think is is so. But let look at the sentment through the books and movies and compare them to each other. Below the overall sentiment of the each book and movie is plotted, besides the fifth and last part of the seventh movie, as we do not have the data for these. Lets find out which of the seven years on Hogwarts we shall really look forward to, when we finally get our letters! 
+
 <img src="images/PS_BM.png" alt="hi" class="inline"/>
 
+Overall movies are "more happy" than the books, but they follows the same pattern. The highest sentiment is in fourth and sixth movie. It is allso here that we have the largest difference between the book and the movies. But why is the sentiment of the movie scripts higher than the sentiment of the books, one may ask. It could be that in the books they have to explicitly write the sad words down, which brings the score down, whereas in the movies they can just show the feelings. Looking at the y-axis, it should be noted that the overall difference is small though.
+
+So are you excited for fourth and sixth year - We are!
 
 ### Explainer Notebook and data
-- [View Explainer Notebook here](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/b7e9289e5e11f6d094204dc59c0d2ea6b877fd11/ExplainerNotebook.ipynb).
-- [Initial list of character names and links used to import Fandom character pages here](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPC.txt)
-- [Cleaned dataset](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv)
+- [Explainer Notebook](https://nbviewer.jupyter.org/github/KlaraElmegaard/SocialGraphs_HP/blob/main/ExplainerNotebookFinal.ipynb).
+- [Initial list of character names and links used to import Fandom character pages](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/HPC.txt)
+- [Cleaned dataset 1](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv), [cleaned dataset 2](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv) and [cleaned dataset 3](https://raw.githubusercontent.com/KlaraElmegaard/SocialGraphs_HP/main/data/FDS.csv)
